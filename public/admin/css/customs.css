@@ -1,0 +1,83 @@
+.unchecked {
+    background: url("../images/unchecked.png") no-repeat;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin-bottom: 0 !important;
+}
+.checked {
+    background: url("../images/checked.png") no-repeat;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin-bottom: 0 !important;
+}
+input[id^="chk-"], input[id^="selectAll"] {
+    visibility: hidden;
+}
+label[for="selectAll"] {
+    margin-top: 5px;
+}
+#grid input[type="text"] {
+    margin-top: 2px;
+}
+.table td {
+    padding: 4px !important;
+    vertical-align: middle;
+}
+.form-control {
+    width: 100%;
+}
+.js-sweetalert .btn {
+    width: 100px;
+}
+.modal-content .modal-header {
+    padding: 6px 15px;
+}
+.modal-content .modal-body p {
+    margin: 0;
+}
+.modal-content .modal-footer {
+    padding: 5px 10px;
+}
+.modal-content .modal-header button {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    outline: 0;
+}
+button.dropdown-toggle:hover, button.dropdown-toggle:focus {
+    color: #635f61 !important;
+}
+.clearfix {
+    padding-top: 10px;
+}
+.form-control-label {
+    line-height: 35px;
+}
+.tab-pane {
+    padding-top: 10px;
+}
+.col-md-9 .btn {
+    width: 120px;
+}
+.block-header {
+    padding-bottom: 0;
+}
+#alertModal li {
+    list-style: none;
+}
+.text-default {
+    color: rgba(126,126,126,0.7);
+}
+a.sort i {
+    position: absolute;
+    z-index: 10;
+    margin: 13px -15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.canvasjs-chart-credit{
+    font-family: 'IRANSans' !important;
+    font-size: 15px !important;
+}

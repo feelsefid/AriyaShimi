@@ -1,0 +1,8 @@
+﻿#fp-menu li {
+    width: 100%;
+    text-align: center;
+    float: right !important;
+}
+* {
+    color: red;
+}

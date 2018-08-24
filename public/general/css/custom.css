@@ -1,0 +1,30 @@
+.logofooter{
+    left: -15px;
+    width: auto;
+    height: 20px;
+    position: absolute;
+    margin-top: -30px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.logofooter-hover {
+    left: -20px;
+    width: auto;
+    height: 20px;
+    position: absolute;
+    margin-top: -30px;
+    opacity: 0.8;
+    transition: .5s;
+}
+.feelsefid {
+    color: #333333;
+    transition: .5s;
+}
+.feelsefid:hover {
+    color: #ED1C24;
+    transition: .5s;
+}
+a:hover {
+    text-decoration: none !important;
+}
