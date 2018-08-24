@@ -453,7 +453,10 @@
                                                         <a href="#" class="btx-entry-inner anmt-item anmt-zoomout stagger anmt-content-slideup anmt-image-slowzoom">
                                                             <div class="btx-entry-header ">
                                                                 <div class="btx-entry-media">
-                                                                    <img src="{{ url(explode(',', $row['image'])[1]) }}" alt="" width="1024" height="768"  /> </div>
+                                                                    @if(!empty(explode(',', $row['image'])[1]))
+                                                                        <img src="{{ url(explode(',', $row['image'])[1]) }}" alt="" width="1024" height="768"  />
+                                                                    @endif
+                                                                </div>
                                                                 <div class="btx-overlay" style="background-color:rgba(9,77,156,0.8);"></div>
                                                             </div>
                                                             <div class="btx-entry-body title-middle" style="padding:30px;">
