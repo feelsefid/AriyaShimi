@@ -144,6 +144,13 @@
 <script type='text/javascript' src='{{ url('/') }}/site/js/main.min.js'></script>
 <script type='text/javascript' src='{{ url('/') }}/site/js/contact-form.js'></script>
 
+<!-- Start Google Maps code -->
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="{{ url('/') }}/site/js/mapmarker.jquery.js" type="text/javascript"></script>
+<script src="{{ url('/') }}/site/js/script.js" type="text/javascript"></script>
+<script src="{{ url('/') }}/site/js/contact-form.js" type="text/javascript"></script>
+<!-- END Google Maps code -->
+
 <script>
     $('.feelsefid').mouseover(function(){
         $('#logofooter').removeClass('logofooter').addClass('logofooter-hover');

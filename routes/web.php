@@ -25,6 +25,8 @@ Route::group(['namespace' => 'Site'], function () {
     Route::get('/portfolio/{id}', 'PortfolioController@show');
     Route::get('/articles', 'ArticleController@index');
     Route::get('/blogs', 'ArticleController@blogs');
+    Route::get('/faq', 'ArticleController@faq');
+    Route::get('/contacts', 'ContactsController@index');
     //Route::get(trans('routes.about'), 'AboutController@index');
 
 });
