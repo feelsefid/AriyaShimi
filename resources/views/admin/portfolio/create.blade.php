@@ -90,6 +90,31 @@
                                                 </div>
                                             </div>
 
+                                            <!-- thumbnail -->
+                                            <div class="row clearfix">
+                                                <label class="col-lg-2 col-md-2 col-sm-4 form-control-label text-left">
+                                                    <span class="required">*</span>
+                                                    @lang('portfolio.thumbnail')
+                                                </label>
+                                                <div class="col-lg-10 col-md-10 col-sm-8">
+                                                    <div class="previewCont empty22">
+                                                        <img src="" alt="" id="runtime_thumbnail">
+                                                    </div>
+                                                    <a href="" class="text-danger delete-row1 delete-row col-md-1">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                    <div class="input-group dirleft">
+                                                            <span class="input-group-addon" onclick="BrowseServer('thumbnail');" style="cursor: pointer" id="span-thumbnail">
+                                                                <i class="fa fa-search" style="line-height: 60px;"></i>
+                                                            </span>
+                                                        {{ Form::text('thumbnail', null, ['class' => 'form-control textright pfDefaultImage', 'id' => 'thumbnail','style' => 'height:82px;']) }}
+                                                    </div>
+                                                    @if ($errors->has('thumbnail'))
+                                                        <spnan class="cr-warning">{{ $errors->first('thumbnail') }}</spnan>
+                                                    @endif
+                                                </div>
+                                            </div>
+
                                             <!-- default_image -->
                                             <div class="row clearfix">
                                                 <label class="col-lg-2 col-md-2 col-sm-4 form-control-label text-left">
@@ -109,8 +134,8 @@
                                                             </span>
                                                         {{ Form::text('default_image', null, ['class' => 'form-control textright pfDefaultImage', 'id' => 'defaultImage','style' => 'height:82px;']) }}
                                                     </div>
-                                                    @if ($errors->has('text'))
-                                                        <spnan class="cr-warning">{{ $errors->first('text') }}</spnan>
+                                                    @if ($errors->has('default_image'))
+                                                        <spnan class="cr-warning">{{ $errors->first('default_image') }}</spnan>
                                                     @endif
                                                 </div>
                                             </div>
