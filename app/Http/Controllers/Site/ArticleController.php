@@ -39,4 +39,11 @@ class ArticleController extends Controller
 
         return view('site.article.blog', compact('data'));
     }
+
+    public function faq()
+    {
+        $data = ArticleCategory::with('articles')->where('module', 'faq')->first();
+
+        return view('site.article.faq', compact('data'));
+    }
 }
