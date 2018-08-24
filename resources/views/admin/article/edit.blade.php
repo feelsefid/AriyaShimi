@@ -126,9 +126,9 @@
                                                 <a href="{{ url('panel/article/delete_row/' . $data->id) }}" class="text-danger delete-row delete-row1 col-md-1" data-image="{{ $row }}">
                                                     <i class="fa fa-trash"></i>
                                                 </a>
-                                                <div class="input-group dirleft">
+                                                <div class="input-group dirleft" style="height: 82px">
                                                     <span class="input-group-addon" onclick="BrowseServer('image-{{  $loop->iteration }}');" style="cursor: pointer" id="span-image-{{ $loop->iteration }}">
-                                                        <i class="fa fa-search"></i>
+                                                        <i class="fa fa-search" style="padding-top: 23px"></i>
                                                     </span>
                                                     {{ Form::text('image[]', $row, ['class' => 'form-control textright', 'id' => 'image-' . $loop->iteration]) }}
                                                 </div>
@@ -140,9 +140,9 @@
                                             <a href="#" class="text-danger delete-row delete-row1 col-md-1">
                                                 <i class="fa fa-trash"></i>
                                             </a>
-                                            <div class="input-group dirleft">
+                                            <div class="input-group dirleft" style="height: 82px">
                                             <span class="input-group-addon" onclick="BrowseServer('{{$imageNumber}}');" style="cursor: pointer" id="span-image-{{$last + 1}}">
-                                                <i class="fa fa-search"></i>
+                                                <i class="fa fa-search" style="padding-top: 23px"></i>
                                             </span>
                                                 {{ Form::text('image[]', null, ['class' => 'form-control textright newinnn', 'id' => "$imageNumber"]) }}
                                             </div>

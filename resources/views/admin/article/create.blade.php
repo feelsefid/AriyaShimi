@@ -114,9 +114,9 @@
                                             <a href="" class="text-danger delete-row1 delete-row col-md-1">
                                                 <i class="fa fa-trash"></i>
                                             </a>
-                                            <div class="input-group dirleft">
+                                            <div class="input-group dirleft" style="height: 82px">
                                                 <span class="input-group-addon" onclick="BrowseServer('image-1');" style="cursor: pointer" id="span-image-1">
-                                                    <i class="fa fa-search"></i>
+                                                    <i class="fa fa-search" style="padding-top: 23px"></i>
                                                 </span>
                                                 {{ Form::text('image[]', null, ['class' => 'form-control textright', 'id' => 'image-1']) }}
                                             </div>

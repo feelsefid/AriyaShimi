@@ -2136,7 +2136,9 @@ body {
     background-color: transparent
 }
 .nav-tabs>.nav-item>.nav-link.active {
-    border: 1px solid #888;
+    border: 1px solid red;
+    border-bottom: none;
+    background-color: #fff;
 }
 .nav-tabs>.nav-item>.nav-link i.now-ui-icons {
     font-size: 12px;
@@ -17691,6 +17693,6 @@ textarea {
 .nav-item{
     margin-bottom: 0px !important;
 }
-.nav-item i{
+.portfolio .nav-item i{
     padding-left: 5px;
 }

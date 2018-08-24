@@ -375,7 +375,7 @@
     border: 2px solid #ed1a3b;
     transition: all 150ms linear
 }
-.theme-red .nav-tabs .nav-link.active {
+.theme-red .portfolio .nav-tabs .nav-link.active {
     border: 1px solid #ed1a3b !important;
     border-left: none !important;
     color: #ed1a3b;
@@ -390,7 +390,7 @@
 .theme-red .blog-page .single-blog-post .img-holder .date-box {
     background-color: #ed4861
 }
-.nav-tabs .nav-link {
+.portfolio .nav-tabs .nav-link {
     border: 1px solid transparent;
     border-top-right-radius: .25rem;
     border-top-left-radius: 0 !important;
