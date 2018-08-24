@@ -46,7 +46,7 @@
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#details"> <i class="zmdi zmdi-info"></i> @lang('general.detail') </a></li>
                             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#images"><i class="zmdi zmdi-image"></i> @lang('general.image') </a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#videos"><i class="zmdi zmdi-image"></i> @lang('general.video') </a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#videos"><i class="zmdi zmdi-videocam"></i> @lang('general.video') </a></li>
                             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings"><i class="zmdi zmdi-settings"></i> @lang('general.setting') </a></li>
                             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#seo"><i class="zmdi zmdi-settings"></i> @lang('general.seo_setting') </a></li>
                         </ul>
