@@ -86,7 +86,7 @@ input, textarea, select {color: #303030; background-color: #ffffff; border-color
 .btx-light-scheme,
 .btx-entry-light-scheme,
 .btx-slider-light-scheme {
-	color: #898989;
+	color: #303030;
 }
 
 .btx-dark-scheme,
@@ -311,10 +311,10 @@ input, textarea, select {color: #303030; background-color: #ffffff; border-color
 .btx-light-scheme .widget .tagcloud a, .btx-light-scheme .widget_calendar tbody, .btx-light-scheme .widget a .btx-widget-meta, .btx-light-scheme .widget a .btx-widget-category {color: #898989;}
 .widget a, .widget.widget_calendar a, .widget_calendar thead {color: #303030;}
 .btx-dark-scheme .widget a, .btx-dark-scheme .widget.widget_calendar a, .btx-dark-scheme .widget_calendar thead {color: #ffffff;}
-.btx-light-scheme .widget a, .btx-light-scheme .widget.widget_calendar a, .btx-light-scheme .widget_calendar thead {color: #FDB813;}
+.btx-light-scheme .widget a, .btx-light-scheme .widget.widget_calendar a, .btx-light-scheme .widget_calendar thead {color: #303030;}
 .widget a:hover, .widget.widget_calendar tfoot a, .widget .btx-widget-viewall, .btx-widget-feature a {color: #FDB813;}
 .btx-dark-scheme .widget a:hover, .btx-dark-scheme .widget.widget_calendar tfoot a, .btx-dark-scheme .widget .btx-widget-viewall, .btx-dark-scheme .btx-widget-feature a {color: #FDB813;}
-.btx-light-scheme .widget a:hover, .btx-light-scheme .widget.widget_calendar tfoot a, .btx-light-scheme .widget .btx-widget-viewall, .btx-light-scheme .btx-widget-feature a {color: #094D9C;}
+.btx-light-scheme .widget a:hover, .btx-light-scheme .widget.widget_calendar tfoot a, .btx-light-scheme .widget .btx-widget-viewall, .btx-light-scheme .btx-widget-feature a {color: #FDB813;}
 .widget .btx-widget-viewall:hover, .btx-widget-feature a:hover {color: #0092c7;}
 .btx-dark-scheme .widget .btx-widget-viewall:hover, .btx-dark-scheme .btx-widget-feature a:hover {color: #0092c7;}
 .btx-light-scheme .widget .btx-widget-viewall:hover, .btx-light-scheme .btx-widget-feature a:hover {color: #0092c7;}
@@ -1240,7 +1240,7 @@ input[type=submit]:focus,
 .btx-navbar .btx-menu > li:before,
 .btx-side-navbar .btx-menu a,
 .btx-side-navbar--full .btx-menu > li:before {
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .btx-navbar .btx-menu > li > a,
