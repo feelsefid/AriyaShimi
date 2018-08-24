@@ -121,7 +121,7 @@
                                             <div class="col-sm-12 col-md-6 fullbox clone-row" style="float: right;height: 60px;line-height: 60px;margin-top: 35px;position:relative;">
 
                                                 <div class="previewCont">
-                                                    <img src="{{ url($row) }}">
+                                                    <img src="{{ url($row) }}" id="runtime_image-{{ $loop->iteration }}">
                                                 </div>
                                                 <a href="{{ url('panel/article/delete_row/' . $data->id) }}" class="text-danger delete-row delete-row1 col-md-1" data-image="{{ $row }}">
                                                     <i class="fa fa-trash"></i>

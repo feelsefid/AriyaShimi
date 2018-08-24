@@ -52,21 +52,21 @@
                             <div class="row">
                                 <div class="col-md-2">
                                     <ul class="nav nav-tabs" role="tablist">
-                                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#details"><i class="zmdi zmdi-view-toc"></i> @lang('general.detail') </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#standard"><i class="zmdi zmdi-view-toc"></i> استاندارد </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#usages"><i class="zmdi zmdi-view-toc"></i> موارد کاربرد </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#mazaya"><i class="zmdi zmdi-view-toc"></i> مزایای استفاده </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#vizhegi"><i class="zmdi zmdi-view-toc"></i>ویژگی ها </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#masraf"><i class="zmdi zmdi-view-toc"></i>میزان مصرف </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#amadesazi"><i class="zmdi zmdi-view-toc"></i>آماده سازی طرح </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#sakht"><i class="zmdi zmdi-view-toc"></i>طریقه ساخت </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#ejra"><i class="zmdi zmdi-view-toc"></i> طریقه اجرا</a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#negahdari"><i class="zmdi zmdi-view-toc"></i> شرایط نگهداری </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#time"><i class="zmdi zmdi-view-toc"></i> مدت نگهداری </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#imeni"><i class="zmdi zmdi-view-toc"></i> نکات ایمنی
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#fanni"><i class="zmdi zmdi-view-toc"></i> خدمات فنی </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings"><i class="zmdi zmdi-settings"></i> @lang('general.setting') </a></li>
-                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#seo"><i class="zmdi zmdi-settings"></i> @lang('general.seo_setting') </a></li>
+                                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#details"><i class="zmdi zmdi-view-toc padding-left-5"></i> @lang('general.detail') </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#standard"><i class="zmdi zmdi-view-toc padding-left-5"></i> استاندارد </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#usages"><i class="zmdi zmdi-view-toc padding-left-5"></i> موارد کاربرد </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#mazaya"><i class="zmdi zmdi-view-toc padding-left-5"></i> مزایای استفاده </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#vizhegi"><i class="zmdi zmdi-view-toc padding-left-5"></i>ویژگی ها </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#masraf"><i class="zmdi zmdi-view-toc padding-left-5"></i>میزان مصرف </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#amadesazi"><i class="zmdi zmdi-view-toc padding-left-5"></i>آماده سازی طرح </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#sakht"><i class="zmdi zmdi-view-toc padding-left-5"></i>طریقه ساخت </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#ejra"><i class="zmdi zmdi-view-toc padding-left-5"></i> طریقه اجرا</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#negahdari"><i class="zmdi zmdi-view-toc padding-left-5"></i> شرایط نگهداری </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#time"><i class="zmdi zmdi-view-toc padding-left-5"></i> مدت نگهداری </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#imeni"><i class="zmdi zmdi-view-toc padding-left-5"></i> نکات ایمنی
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#fanni"><i class="zmdi zmdi-view-toc padding-left-5"></i> خدمات فنی </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings"><i class="zmdi zmdi-settings padding-left-5"></i> @lang('general.setting') </a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#seo"><i class="zmdi zmdi-settings padding-left-5"></i> @lang('general.seo_setting') </a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-10">

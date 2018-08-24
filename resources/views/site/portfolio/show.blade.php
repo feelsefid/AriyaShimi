@@ -26,11 +26,6 @@
                                         <div class="btx-item js-item-divider btx-divider btx-divider--single btx-center-align" >
                                             <div class="btx-divider-line btx-p-border-bg btx-p-border-border" style="width:120px; height:1px; background-color:#094D9C;"></div>
                                         </div>
-                                        <div class="btx-item js-item-image btx-image btx-center-align" >
-                                            <div class="btx-image-container">
-                                                <img src="{{ url($portfolio->default_image) }}" alt=""  width="768" height="512" />
-                                            </div>
-                                        </div>
                                         <div class="btx-item js-item-text btx-text btx-right-align btx-primary-font">
                                             <div class="btx-row" style="margin:0 -30px;">
                                                 <div class="btx-text-content btx-col-12" style="padding:0 30px;">
@@ -40,6 +35,11 @@
                                                         </span>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="btx-item js-item-image btx-image btx-center-align" >
+                                            <div class="btx-image-container">
+                                                <img src="{{ url($portfolio->default_image) }}" alt=""  width="768" height="512" />
                                             </div>
                                         </div>
                                     </div>
