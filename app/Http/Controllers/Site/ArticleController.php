@@ -26,18 +26,17 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function index()
     {
-        $setting = Setting::where('status', 1)->where('language', app()->getLocale())->first();
-        $news = Article::find($id);
-        $dateTime=explode(" ",$news->created_at);
-        $date=explode("-",$dateTime[0]);
-        $carbon=\Carbon\Carbon::create($date[0],$date[1]);
-        $shamsi = \Morilog\Jalali\jDateTime::strftime('Y-M-d', strtotime($dateTime[0]));
-        $exploded=explode('-',$shamsi);
-        $year=$exploded[0];
-        $month=$exploded[1];
-        $day=$exploded[2];
-        return view('site.article.show', compact(['news','year','month','day','setting']));
+        $data = ArticleCategory::with('articles')->where('module', 'article')->first();
+
+        return view('site.article.index', compact('data'));
+    }
+
+    public function blogs()
+    {
+        $data = ArticleCategory::with('articles')->where('module', 'blog')->first();
+
+        return view('site.article.blog', compact('data'));
     }
 }

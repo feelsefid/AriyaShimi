@@ -273,7 +273,10 @@ function SetUrl( url, width, height, alt )
     oWindow = null;
 
     var imagecontainer = 'runtime_' + document.getElementById(urlobj).getAttribute('id');
-    document.getElementById(imagecontainer).src = baseURL + url;
+
+    if (document.getElementById(imagecontainer)) {
+        document.getElementById(imagecontainer).src = baseURL + url;
+    }
 }
 
 var options = {

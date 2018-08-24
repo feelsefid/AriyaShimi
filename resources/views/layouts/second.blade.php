@@ -43,6 +43,17 @@
                         @foreach(app('App\Http\Controllers\Site\MenuController')->index() as $row)
                             <li class="menu-item menu-item-has-children">
                                 <a href="{{ url($row['link']) }}" id="{{ $row['slug'] }}">{{ $row['name'] }}</a>
+                                @if(array_key_exists('_children', $row))
+                                    <div class="btx-mega-menu btx-s-bg-bg" style="display: none;">
+                                        <ul class="direction-rtl">
+                                            @foreach($row['_children'] as $child)
+                                            <li class="menu-item menu-item-has-children btx-col-1-5 btx-p-border-border">
+                                                <a class="btx-mega-menu-title" href="{{ $child['link'] }}">{{ $child['name'] }}</a>
+                                            </li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                             </li>
                         @endforeach
                     </ul>
