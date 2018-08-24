@@ -53,7 +53,6 @@
                             </li>
                         @endforeach
                     </ul>
-
                     <div class="btx-widgets">
                         <ul class="btx-widgets-list">
                             <li id="bateaux_widget_social-6" class="widget btx-widget btx-widget-social">
@@ -74,13 +73,13 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <div style="display: inline-block; padding: 0px 5px;"><a href="#">En</a></div>
-                                <div style="display: inline-block; padding: 0px 5px;"><a href="#">Ar</a></div>
-                                <div style="display: inline-block; padding: 0px 5px;"><a href="#">Ru</a></div>
-                            </li>
+                            {{--<li>--}}
+                                {{--<div style="display: inline-block; padding: 0px 5px;"><a href="#">En</a></div>--}}
+                                {{--<div style="display: inline-block; padding: 0px 5px;"><a href="#">Ar</a></div>--}}
+                                {{--<div style="display: inline-block; padding: 0px 5px;"><a href="#">Ru</a></div>--}}
+                            {{--</li>--}}
                             <li id="text-8" class="widget widget_text">
-                                <div class="text-right">
+                                <div class="text-center">
                                     @lang('general.footer_text')
                                 </div>
                             </li>
@@ -99,7 +98,6 @@
                             <img src="{{ url('/') }}/site/images/logo/loho-AryaShimi.png" alt="">
                         </a>
                     </div>
-
                     <a class="btx-collapsed-button" href="#" data-target=".btx-collapsed-menu">
                         <span class="btx-lines"></span>
                     </a>

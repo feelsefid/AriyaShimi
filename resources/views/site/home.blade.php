@@ -53,12 +53,12 @@
                                                     <div class="btx-box-body" style="padding-top:8%; padding-right:16%; padding-left:16%; padding-bottom:8%;">
                                                         <div class="btx-item js-item-heading btx-heading btx-heading--plain btx-right-align">
                                                             <h1 class="btx-heading-text btx-custom_b-font btx-s-text-color btx-s-text-border">
-                                                                <span class="font-style font-style-big" style="font-size: 25px;">
+                                                                <span class="font-style font-style-big" style="font-size: 16px;">
                                                                     {{ $data[1]['name'] }}
                                                                 </span>
                                                             </h1>
                                                         </div>
-                                                        <div class="btx-item js-item-divider btx-divider btx-divider--single btx-right-align" style="margin-top:20px; margin-bottom:20px;">
+                                                        <div class="btx-item js-item-divider btx-divider btx-divider--single btx-right-align" style="margin-top:10px; margin-bottom:10px;">
                                                             <div class="btx-divider-line btx-p-border-bg btx-p-border-border" style="width:200px; height:1px; background-color:#dddddd;"></div>
                                                         </div>
                                                         <div class="btx-item js-item-text btx-text btx-right-align btx-primary-font">
@@ -124,12 +124,12 @@
                                                     <div class="btx-box-body" style="padding-top:8%; padding-right:16%; padding-left:16%; padding-bottom:8%;">
                                                         <div class="btx-item js-item-heading btx-heading btx-heading--plain btx-right-align">
                                                             <h1 class="btx-heading-text btx-custom_b-font btx-s-text-color btx-s-text-border">
-                                                                <span class="font-style font-style-big" style="font-size: 25px;">
+                                                                <span class="font-style font-style-big" style="font-size: 16px;">
                                                                     {{ $data[3]['name'] }}
                                                                 </span>
                                                             </h1>
                                                         </div>
-                                                        <div class="btx-item js-item-divider btx-divider btx-divider--single btx-right-align" style="margin-top:20px; margin-bottom:20px;">
+                                                        <div class="btx-item js-item-divider btx-divider btx-divider--single btx-right-align" style="margin-top:10px; margin-bottom:10px;">
                                                             <div class="btx-divider-line btx-p-border-bg btx-p-border-border" style="width:200px; height:1px; background-color:#dddddd;"></div>
                                                         </div>
                                                         <div class="btx-item js-item-text btx-text btx-right-align btx-primary-font">
@@ -198,9 +198,9 @@
                                                 <div class="btx-box-content btx-middle-vertical" style="max-width:700px; overflow-y:hidden;">
                                                     <div class="btx-box-body" style="padding-top:8%; padding-right:16%; padding-left:16%; padding-bottom:8%;">
                                                         <div class="btx-item js-item-heading btx-heading btx-heading--plain btx-right-align">
-                                                            <h1 class="btx-heading-text btx-custom_b-font btx-s-text-color btx-s-text-border"><span class="font-style font-style-big" style="font-size: 25px;">{{ $data[0]['name'] }}</span></h1>
+                                                            <h1 class="btx-heading-text btx-custom_b-font btx-s-text-color btx-s-text-border"><span class="font-style font-style-big" style="font-size: 16px;">{{ $data[0]['name'] }}</span></h1>
                                                         </div>
-                                                        <div class="btx-item js-item-divider btx-divider btx-divider--single btx-right-align" style="margin-top:20px; margin-bottom:20px;">
+                                                        <div class="btx-item js-item-divider btx-divider btx-divider--single btx-right-align" style="margin-top:10px; margin-bottom:10px;">
                                                             <div class="btx-divider-line btx-p-border-bg btx-p-border-border" style="width:200px; height:1px; background-color:#dddddd;"></div>
                                                         </div>
                                                         <div class="btx-item js-item-text btx-text btx-right-align btx-primary-font">
@@ -266,12 +266,12 @@
                                                     <div class="btx-box-body" style="padding-top:8%; padding-right:16%; padding-left:16%; padding-bottom:8%;">
                                                         <div class="btx-item js-item-heading btx-heading btx-heading--plain btx-right-align">
                                                             <h1 class="btx-heading-text btx-custom_b-font btx-s-text-color btx-s-text-border">
-                                                                <span class="font-style font-style-big" style="font-size: 25px;">
+                                                                <span class="font-style font-style-big" style="font-size: 16px;">
                                                                     {{ $data[2]['name'] }}
                                                                 </span>
                                                             </h1>
                                                         </div>
-                                                        <div class="btx-item js-item-divider btx-divider btx-divider--single btx-right-align" style="margin-top:20px; margin-bottom:20px;">
+                                                        <div class="btx-item js-item-divider btx-divider btx-divider--single btx-right-align" style="margin-top:10px; margin-bottom:10px;">
                                                             <div class="btx-divider-line btx-p-border-bg btx-p-border-border" style="width:200px; height:1px; background-color:#dddddd;"></div>
                                                         </div>
                                                         <div class="btx-item js-item-text btx-text btx-right-align btx-primary-font">
@@ -337,12 +337,12 @@
                                                     <div class="btx-box-body" style="padding-top:8%; padding-right:16%; padding-left:16%; padding-bottom:8%;">
                                                         <div class="btx-item js-item-heading btx-heading btx-heading--plain btx-right-align">
                                                             <h1 class="btx-heading-text btx-custom_b-font btx-s-text-color btx-s-text-border">
-                                                                <span class="font-style font-style-big" style="font-size: 25px;">
+                                                                <span class="font-style font-style-big" style="font-size: 16px;">
                                                                     {{ $data[4]['name'] }}
                                                                 </span>
                                                             </h1>
                                                         </div>
-                                                        <div class="btx-item js-item-divider btx-divider btx-divider--single btx-right-align" style="margin-top:20px; margin-bottom:20px;">
+                                                        <div class="btx-item js-item-divider btx-divider btx-divider--single btx-right-align" style="margin-top:10px; margin-bottom:10px;">
                                                             <div class="btx-divider-line btx-p-border-bg btx-p-border-border" style="width:200px; height:1px; background-color:#dddddd;"></div>
                                                         </div>
                                                         <div class="btx-item js-item-text btx-text btx-right-align btx-primary-font">
