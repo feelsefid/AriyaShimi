@@ -43,16 +43,62 @@
                         @foreach(app('App\Http\Controllers\Site\MenuController')->index() as $row)
                             <li class="menu-item menu-item-has-children @if(array_key_exists('_children', $row)) menu-item-mega-menu @endif">
                                 <a href="{{ url($row['link']) }}" id="{{ $row['slug'] }}">{{ $row['name'] }}</a>
-                                @if(array_key_exists('_children', $row))
-                                    <div class="btx-mega-menu btx-s-bg-bg" style="display: none;">
-                                        <ul class="direction-rtl">
-                                            @foreach($row['_children'] as $child)
-                                            <li class="menu-item menu-item-has-children btx-col-1-5 btx-p-border-border">
-                                                <a class="btx-mega-menu-title" href="{{ $child['link'] }}">{{ $child['name'] }}</a>
-                                            </li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
+                                @if($row['type'] == 'module')
+                                    @if($row['slug'] == 'portfolio')
+                                        @php
+                                            $cats = \App\Models\PortfolioCategory::where('status', 1)->where('language', app()->getLocale())->get();
+                                        @endphp
+
+                                        <div class="btx-mega-menu btx-s-bg-bg" style="display: none;">
+                                            <div class="col-lg-3 col-md-3" style="padding: 0">
+                                                <img src="{{ url('/') }}{{ @$row['image'] }}" alt="" style="max-height: 550px">
+                                            </div>
+                                            <div class="col-lg-9 col-md-9">
+                                                <ul>
+                                                    @foreach($cats as $cat)
+
+                                                        @php
+                                                            $products = \App\Models\Portfolio::where('portfolio_categories_id', $cat->id)->limit(3)->get();
+                                                        @endphp
+
+                                                        @if(count($products) > 0)
+                                                            <li class="pull-right col-lg-4 col-md-4" style="padding: 0; height: 135px">
+                                                                <div class="btx-mega-menu-item menu-item-has-children">
+                                                                    <a class="btx-mega-menu-title" href="{{ url('portfolio/' . $cat->id . '/cat') }}">
+                                                                        {{ $cat->name }}
+                                                                    </a>
+                                                                    <ul class="sub-menu btx-s-bg-bg">
+                                                                        @foreach($products as $product)
+                                                                            <li class="menu-item">
+                                                                                <a href="{{ url('portfolio/' . $product->id) }}">
+                                                                                    {{ $product->name }}
+                                                                                </a>
+                                                                            </li>
+                                                                        @endforeach
+                                                                        <li class="menu-item">
+                                                                            <a href="{{ url('portfolio/' . $cat->id . '/cat') }}">@lang('portfolio.more')</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                        @endif
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    @endif
+                                @else
+                                    @if(array_key_exists('_children', $row))
+                                        <div class="btx-mega-menu btx-s-bg-bg" style="display: none;">
+                                            <ul class="direction-rtl">
+                                                @foreach($row['_children'] as $child)
+                                                    <li class="menu-item menu-item-has-children btx-col-1-5 btx-p-border-border">
+                                                        <a class="btx-mega-menu-title" href="{{ $child['link'] }}">{{ $child['name'] }}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
                                 @endif
                             </li>
                         @endforeach

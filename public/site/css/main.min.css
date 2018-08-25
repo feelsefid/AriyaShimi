@@ -8154,7 +8154,7 @@ screen and (max-height:300px) {
     position: absolute;
     left: 0;
     width: 100%;
-    padding: 40px 0;
+    padding: 15px 0;
     z-index: 100;
     overflow: hidden
 }
@@ -8199,11 +8199,11 @@ screen and (max-height:300px) {
 }
 
 .btx-navbar .btx-mega-menu .sub-menu>li>a {
-    padding: 7px 0
+    padding: 3px 0
 }
 
 .btx-navbar .btx-mega-menu-title {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     line-height: 1.78571;
     text-align: left;
     text-transform: uppercase;

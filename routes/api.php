@@ -37,13 +37,9 @@ Route::get('getArticleList/{id}', function ($id) {
 Route::get('getArticle/{id}', 'Site\ArticleController@getArticle');
 
 Route::get('getModuleList', function () {
-    $data = \App\Models\ArticleCategory::where('status', 1)
+    $modules = \App\Models\Module::where('status', 1)
         ->where('language', app()->getLocale())
-        ->where('module', '<>', null)
-        ->get();
-    foreach($data as $row) {
-        $modules[$row->module . '/' . $row->id] = $row->name;
-    }
+        ->pluck('title', 'route');
 
     return response()->json($modules);
 });
