@@ -44,7 +44,7 @@
                     <div class="body">
                         <div class="table-responsive" style="min-height: 350px">
                             <form action="{{ url('panel/menu') }}" method="GET" id="search">
-                                <table id="sortable" cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered table-hover" id="grid">
+                                <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered table-hover" id="grid">
                                     <thead>
                                     <tr>
                                         <td style="width: 3%">

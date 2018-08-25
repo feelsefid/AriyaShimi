@@ -6,6 +6,7 @@ use App\Models\Article;
 use App\Models\ArticleCategory;
 use App\Models\Menu;
 use App\Models\MenuCategory;
+use App\Models\Module;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
@@ -215,13 +216,9 @@ class MenuController extends Controller
         $data = Menu::find($id);
         $parents = Menu::pluck('name', 'id');
 
-        $n = ArticleCategory::where('status', 1)
+        $modules = Module::where('status', 1)
             ->where('language', app()->getLocale())
-            ->where('module', '<>', null)
-            ->get();
-        foreach($n as $row) {
-            $modules[$row->module . '/' . $row->id] = $row->name;
-        }
+            ->pluck('title', 'route');
 
         $categories = MenuCategory::pluck('name', 'id');
         $menu_level_1 = [];
