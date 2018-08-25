@@ -17,12 +17,7 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        $setting = Setting::where('status', 1)->where('language', app()->getLocale())->first();
-        $productCats=ArticleCategory::where('parent_id',27)->get();
-        $productCatID=ArticleCategory::where('parent_id',27)->pluck('id');
-        $portfolios=Article::whereIn('article_categories_id',$productCatID)->with('article_categories')->get();
-
-        return view('site.portfolio.fullList',compact(['productCats','portfolios','setting']));
+        return view('site.portfolio.index',compact('data'));
     }
 
     /**
