@@ -50,81 +50,27 @@
                                             <div class="btx-divider-line btx-p-border-bg btx-p-border-border" style="width:100%; height:1px;"></div>
                                         </div>
                                         <div class="btx-item js-item-accordion btx-accordion btx-accordion--fill btx-right-align direction-rtl text-justify"  data-multiple="">
-                                            <div class="btx-accordion-panel active " >
+                                            @foreach($data->articles as $row)
+                                            <div class="btx-accordion-panel" >
                                                 <div class="btx-accordion-heading btx-s-text-color btx-p-border-border btx-s-bg-bg" style="border-width:1px; border-style:solid;">
-                                                    <span class="btx-accordion-title">آیا میزان تناژ تولیدی برای پروژه ها محدودیت دارد؟ به کدام شهر های ایران ارسال دارید؟</span>
+                                                    <span class="btx-accordion-title">
+                                                        {{ $row->name }}
+                                                    </span>
                                                     <span class="fa fa-angle-left" style="padding-left: 5px"></span>
                                                 </div>
                                                 <div class="btx-accordion-body" style="padding-top:30px; padding-bottom:30px;">
                                                     <div class="btx-item js-item-text btx-text btx-right-align btx-primary-font">
                                                         <div class="btx-row" style="margin:0 -30px;">
                                                             <div class="btx-text-content btx-col-12" style="padding:0 30px;">
-                                                                <div class="btx-text-content-inner text-justify">از نظر تناژ، محدودیتی وجود ندارد و در سابقه کاری شرکت همکاری با پروژه های نظیر آزاد راه تهران شمال با حجم تناژ بسیار بالا دیده میشود. و اینکه به تمامی شهر های ایران ارسال داریم.</div>
+                                                                <div class="btx-text-content-inner text-justify">
+                                                                    {!! $row->text !!}
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="btx-accordion-panel " >
-                                                <div class="btx-accordion-heading btx-s-text-color btx-p-border-border btx-s-bg-bg" style="border-width:1px; border-style:solid;">
-                                                    <span class="btx-accordion-title">موارد مصرف چسب های کاشی چییت؟ و اینکه آیا این چسب ها فقط روی سطح کاربرد دارند یا روی دیوار هم کارایی دارند؟</span>
-                                                    <span class="fa fa-angle-left" style="padding-left: 5px"></span>
-                                                </div>
-                                                <div class="btx-accordion-body" style="padding-top:30px; padding-bottom:30px;">
-                                                    <div class="btx-item js-item-text btx-text btx-right-align btx-primary-font">
-                                                        <div class="btx-row" style="margin:0 -30px;">
-                                                            <div class="btx-text-content btx-col-12" style="padding:0 30px;">
-                                                                <div class="btx-text-content-inner text-justify">موارد کاربرد چسب های کاشی شامل کاشی های جاذب، سنگ، سنگ های آنتیک، و موزائیک هستند و همچنین روی سطوح دیوار، کف، گچ، سیمان، بتن و... کاربرد دارند.</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="btx-accordion-panel " >
-                                                <div class="btx-accordion-heading btx-s-text-color btx-p-border-border btx-s-bg-bg" style="border-width:1px; border-style:solid;">
-                                                    <span class="btx-accordion-title">آیا محصولات زودگیر بتن باعث کاهش مقاومت بتن می شود؟</span>
-                                                    <span class="fa fa-angle-left" style="padding-left: 5px"></span>
-                                                </div>
-                                                <div class="btx-accordion-body" style="padding-top:30px; padding-bottom:30px;">
-                                                    <div class="btx-item js-item-text btx-text btx-right-align btx-primary-font">
-                                                        <div class="btx-row" style="margin:0 -30px;">
-                                                            <div class="btx-text-content btx-col-12" style="padding:0 30px;">
-                                                                <div class="btx-text-content-inner text-justify">به طور کلی و علمی هرگونه ماده زودگیری باعث کاهش مقاومت کوتاه مدت یا ۲۸ روزه بتن میشود اما در دراز مدت و در مقاومت نهایی یا ۹۰ روزه این مشکل برطرف میشود و تاثیر چندانی در مقاومت نهایی بتن ندارد.</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="btx-accordion-panel " >
-                                                <div class="btx-accordion-heading btx-s-text-color btx-p-border-border btx-s-bg-bg" style="border-width:1px; border-style:solid;">
-                                                    <span class="btx-accordion-title">برای آب بندی و نشت زدایی سازه های بتنی چه پیشنهادی دارید؟</span>
-                                                    <span class="fa fa-angle-left" style="padding-left: 5px"></span>
-                                                </div>
-                                                <div class="btx-accordion-body" style="padding-top:30px; padding-bottom:30px;">
-                                                    <div class="btx-item js-item-text btx-text btx-right-align btx-primary-font">
-                                                        <div class="btx-row" style="margin:0 -30px;">
-                                                            <div class="btx-text-content btx-col-12" style="padding:0 30px;">
-                                                                <div class="btx-text-content-inner text-justify">بهترین پیشنهاد ما برای آب بند سازی، محصول آب بند کریستالی هست که از دسته مواد بلور ساز با قدرت نفوذ بسیار زیاد به داخل بتن میباشد. همچنین این ماده در برابر نفوذ مواد شیمیایی مخرب نیز مقاوم است. البته که بسته به نوع خاص شرایط شما پیشنهاد های دیگری از همین دسته محصولات وجود دارد.</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="btx-accordion-panel " >
-                                                <div class="btx-accordion-heading btx-s-text-color btx-p-border-border btx-s-bg-bg" style="border-width:1px; border-style:solid;">
-                                                    <span class="btx-accordion-title">محصولات رنگی شما شامل چه مواردی هستند؟</span>
-                                                    <span class="fa fa-angle-left" style="padding-left: 5px"></span>
-                                                </div>
-                                                <div class="btx-accordion-body" style="padding-top:30px; padding-bottom:30px;">
-                                                    <div class="btx-item js-item-text btx-text btx-right-align btx-primary-font">
-                                                        <div class="btx-row" style="margin:0 -30px;">
-                                                            <div class="btx-text-content btx-col-12" style="padding:0 30px;">
-                                                                <div class="btx-text-content-inner text-justify">تولیدات ما شامل رنگ ها از جمله رنگ های نما، آکریلیک، استخری، روغنی و... همچنین رنگ های اپوکسی. ضد زنگ ها و روغن بتونه، روغن جلا و پاک کننده سیمان و بتن و چربی زدا ها هستند.</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            @endforeach
                                         </div>
                                     </div>
                                 </div>

@@ -47,6 +47,7 @@
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#details"> <i class="zmdi zmdi-info"></i> @lang('general.detail') </a></li>
                             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#type"><i class="zmdi zmdi-image"></i> @lang('menu.type') </a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#images"><i class="zmdi zmdi-image"></i> @lang('general.image') </a></li>
                             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings"><i class="zmdi zmdi-settings"></i> @lang('general.setting') </a></li>
                         </ul>
 
@@ -153,6 +154,32 @@
                                     <div class="col-lg-10 col-md-10 col-sm-8" id="menu_level_2">
                                         @if(in_array($data->type, ['article']))
                                             {{ Form::select('link', $link, null, ['class' => 'form-control ms', 'placeholder', '', 'style' => 'margin-top: 15px']) }}
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane" id="images">
+                                <div class="row clearfix">
+                                    <label class="col-lg-2 col-md-2 col-sm-4 form-control-label text-left">
+                                        <span class="required">*</span>
+                                        @lang('general.image')
+                                    </label>
+                                    <div class="col-lg-10 col-md-10 col-sm-8">
+                                        <div class="previewCont empty22">
+                                            <img src="{{ url('/') }}{{ @$data->image }}" alt="" id="runtime_image">
+                                        </div>
+                                        <a href="" class="text-danger delete-row1 delete-row col-md-1">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                        <div class="input-group dirleft">
+                                                <span class="input-group-addon" onclick="BrowseServer('image');" style="cursor: pointer" id="span-image">
+                                                    <i class="fa fa-search" style="line-height: 60px;"></i>
+                                                </span>
+                                            {{ Form::text('image', null, ['class' => 'form-control textright pfDefaultImage', 'id' => 'image','style' => 'height:82px;']) }}
+                                        </div>
+                                        @if ($errors->has('image'))
+                                            <spnan class="cr-warning">{{ $errors->first('image') }}</spnan>
                                         @endif
                                     </div>
                                 </div>

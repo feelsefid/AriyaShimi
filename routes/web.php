@@ -25,7 +25,11 @@ Route::group(['namespace' => 'Site'], function () {
     Route::get('/portfolio/{id}/{title}', 'PortfolioController@show');
     Route::get('/portfolio/{id}', 'PortfolioController@show');
     Route::get('/articles', 'ArticleController@index');
+    Route::get('/articles/{id}', 'ArticleController@article_show');
+    Route::get('/articles/{id}/{title}', 'ArticleController@article_show');
     Route::get('/blogs', 'ArticleController@blogs');
+    Route::get('/blogs/{id}', 'ArticleController@show');
+    Route::get('/blogs/{id}/{title}', 'ArticleController@show');
     Route::get('/faq', 'ArticleController@faq');
     Route::get('/contacts', 'ContactsController@index');
     //Route::get(trans('routes.about'), 'AboutController@index');

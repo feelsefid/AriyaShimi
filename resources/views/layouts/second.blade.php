@@ -41,7 +41,7 @@
                     </div>
                     <ul id="menu-main-menu" class="btx-navbar-nav btx-menu">
                         @foreach(app('App\Http\Controllers\Site\MenuController')->index() as $row)
-                            <li class="menu-item menu-item-has-children">
+                            <li class="menu-item menu-item-has-children @if(array_key_exists('_children', $row)) menu-item-mega-menu @endif">
                                 <a href="{{ url($row['link']) }}" id="{{ $row['slug'] }}">{{ $row['name'] }}</a>
                                 @if(array_key_exists('_children', $row))
                                     <div class="btx-mega-menu btx-s-bg-bg" style="display: none;">

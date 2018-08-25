@@ -33,11 +33,25 @@ class ArticleController extends Controller
         return view('site.article.index', compact('data'));
     }
 
+    public function article_show($id)
+    {
+        $data = Article::find($id);
+
+        return view('site.article.article_show', compact('data'));
+    }
+
     public function blogs()
     {
         $data = ArticleCategory::with('articles')->where('module', 'blog')->first();
 
         return view('site.article.blog', compact('data'));
+    }
+
+    public function show($id)
+    {
+        $data = Article::find($id);
+
+        return view('site.article.show', compact('data'));
     }
 
     public function faq()

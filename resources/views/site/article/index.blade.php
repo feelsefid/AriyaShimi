@@ -44,27 +44,39 @@
                                 <div class="btx-row btx-row--main">
                                     <div class="btx-col-12">
                                         <div class="btx-item js-item-blog btx-blog btx-blog--masonry btx-right-align btx-with-spacing">
+                                            @foreach($data->articles as $row)
                                             <div class="btx-blog-content" style="margin:0 -10px;">
                                                 <article class="float-right btx-entry btx-entry--standard btx-col-1-5 btx-entry-light-scheme post-31 post type-post status-publish format-standard has-post-thumbnail hentry category-inspiration category-travel tag-life tag-ocean tag-wave" style="margin-bottom:20px; padding:0 10px;" data-filter="Inspiration, Travel">
                                                     <div class="btx-entry-inner anmt-item anmt-fadein btx-with-shadow" style="background-color:rgba(255,255,255,0.9);">
                                                         <div class="btx-entry-header">
                                                             <div class="btx-entry-media btx-s-text-color">
-                                                                <a class="anmt-image-rotate" href="#"><img src="upload/blog-drown-1280x853.jpg" alt="" width="1280" height="853"  /></a>
+                                                                <a class="anmt-image-rotate" href="{{ url('articles/' . $row->id) }}">
+                                                                    <img src="{{ url('/') }}{{ $row->image }}" alt="{{ $row->name }}" width="1280" height="853"  />
+                                                                </a>
                                                             </div>
                                                         </div>
                                                         <div class="btx-entry-body text-right" style="padding:40px;">
                                                             <h4 class="btx-entry-title btx-s-text-color btx-secondary-font">
-                                                                <a href="single-article.html">بتن چیست؟</a>
+                                                                <a href="{{ url('articles/' . $row->id) }}">
+                                                                    {{ $row->name }}
+                                                                </a>
                                                             </h4>
                                                             <div class="btx-entry-meta btx-s-text-color btx-s-text-color btx-primary-font">
-                                                                <span class="btx-entry-date direction-rtl">۱۳۹۶/۲/۲</span>
+                                                                @php
+                                                                    $data=\Morilog\Jalali\jDateTime::strftime('j F Y', $row->created_at);
+                                                                @endphp
+                                                                <span class="btx-entry-date" dir="@lang('general.direction')">
+                                                                    {{ \Morilog\Jalali\jDateTime::convertNumbers($data) }}
+                                                                </span>
                                                             </div>
-                                                            <div class="btx-entry-excerpt text-justify direction-rtl" style="font-size: 13px; line-height: 23px">یکی از مهمترین و متداولترین مصالح ساختمانی «بتن» (Concrete) است که به علت دارا بودن خواصی از جمله شکل خمیری قبل از گیرش، مقاومت خوب در برابر آتش سوزی، دسترسی آسان به مصالح و مقاومت فشاری خوب آن استفاده از آن را با مقبولیت عمومی روبرو کرده است.</div>
+                                                            <div class="btx-entry-excerpt text-justify" style="font-size: 13px; line-height: 23px" dir="@lang('general.direction')">
+                                                                {!! mb_substr($row->text, 0, $row->summary_character_count) !!} ...
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </article>
                                             </div>
-
+                                            @endforeach
                                         </div>
                                     </div>
                                 </div>

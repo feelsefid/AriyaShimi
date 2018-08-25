@@ -47,161 +47,51 @@
                                                 <div class="btx-timeline-title-text btx-p-border-border btx-s-text-color">اخبار</div>
                                             </div>
                                             <div class="btx-blog-content">
+                                                @foreach($data->articles as $row)
                                                 <article class="btx-entry btx-entry--standard  post-141 post type-post status-publish format-standard has-post-thumbnail hentry category-travel tag-mountain tag-winter" style="margin-bottom:60px;">
                                                     <div class="btx-entry-inner anmt-item anmt-fadein">
                                                         <div class="btx-entry-timeline-icon btx-p-border-bg"></div>
                                                         <div class="btx-entry-header">
                                                             <div class="btx-entry-media btx-s-text-color">
-                                                                <a class="" href="#"><img src="images/news/News-01.jpg" alt="" width="1024" height="683"  /></a>
+                                                                <a class="" href="{{ url('blogs/' . $row->id) }}">
+                                                                    <img src="{{ url($row->image) }}" alt="{{ url($row->name) }}" style="max-height: 400px; max-width: 400px; width: auto; height: auto"  />
+                                                                </a>
                                                             </div>
                                                         </div>
                                                         <div class="btx-entry-body direction-rtl">
                                                             <div class="btx-entry-body-inner btx-s-bg-bg " style="background-color:rgba(255,255,255,1); border-color:#ffffff; padding:40px;">
                                                                 <div class="btx-entry-timeline-header btx-p-border-border btx-s-text-color btx-primary-font">
-                                                                    <div class="btx-entry-timeline-day float-right">۳۰</div>
+                                                                    @php
+                                                                        $day=\Morilog\Jalali\jDateTime::strftime('j', $row->created_at);
+                                                                        $month=\Morilog\Jalali\jDateTime::strftime('F', $row->created_at);
+                                                                        $year=\Morilog\Jalali\jDateTime::strftime('Y', $row->created_at);
+                                                                    @endphp
+                                                                    <div class="btx-entry-timeline-day float-right">
+                                                                        {{ \Morilog\Jalali\jDateTime::convertNumbers($day) }}
+                                                                    </div>
                                                                     <div class="btx-entry-timeline-subheader">
-                                                                        <h4>خرداد</h4>
-                                                                        <h4>۱۳۹۶</h4>
+                                                                        <h4>
+                                                                            {{ \Morilog\Jalali\jDateTime::convertNumbers($month) }}
+                                                                        </h4>
+                                                                        <h4>
+                                                                            {{ \Morilog\Jalali\jDateTime::convertNumbers($year) }}
+                                                                        </h4>
                                                                     </div>
                                                                 </div>
                                                                 <h4 class="btx-entry-title btx-s-text-color btx-secondary-font">
-                                                                    <a href="news-01.html"><h3 class="btx-post-title">فصلنامه گواهینامه فنی از سوی مرکز تحقیقات راه، مسکن و شهرسازی منتشر شد</h3></a>
+                                                                    <a href="{{ url('blogs/' . $row->id) }}">
+                                                                        <h3 class="btx-post-title">
+                                                                            {{ $row->name }}
+                                                                        </h3></a>
                                                                 </h4>
-                                                                <div class="btx-entry-excerpt text-justify">مرکز تحقیقات راه، مسکن و شهرسازی طبق اساسنامه خود و آیین نامه اجرایی ماده 14 قانون ساماندهی و حمایت از تولید و عرضه مسکن، نسبت به بررسی و ارزیابی محصولات و فرآورده های ساختمانی ...</div>
+                                                                <div class="btx-entry-excerpt text-justify">
+                                                                    {!! mb_substr($row->text, 0, $row->summary_character_count) !!} ...
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </article>
-                                                <article class="btx-entry btx-entry--standard  post-139 post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-life tag-style" style="margin-bottom:60px;">
-                                                    <div class="btx-entry-inner anmt-item anmt-fadein">
-                                                        <div class="btx-entry-timeline-icon btx-p-border-bg"></div>
-                                                        <div class="btx-entry-header">
-                                                            <div class="btx-entry-media btx-s-text-color">
-                                                                <a class="" href="#"><img src="upload/blog-paint-1024x683.jpg" alt="" width="1024" height="683"  /></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="btx-entry-body direction-rtl">
-                                                            <div class="btx-entry-body-inner btx-s-bg-bg " style="background-color:rgba(255,255,255,1); border-color:#ffffff; padding:40px;">
-                                                                <div class="btx-entry-timeline-header btx-p-border-border btx-s-text-color btx-primary-font">
-                                                                    <div class="btx-entry-timeline-day float-right">26</div>
-                                                                    <div class="btx-entry-timeline-subheader">
-                                                                        <h4>December</h4>
-                                                                        <h4>2015</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <h4 class="btx-entry-title btx-s-text-color btx-secondary-font">
-                                                                    <a href="#">The bluish shade of gray</a>
-                                                                </h4>
-                                                                <div class="btx-entry-excerpt text-justify">Mauris at bibendum ante. Vivamus turpis elit, rhoncus vel felis id, pulvinar sodales justo. Proin ante ex, molestie sit amet molestie in, volutpat ut nunc. Nam eu quam porta, volutpat nulla eget.</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                                <article class="btx-entry btx-entry--standard  post-141 post type-post status-publish format-standard has-post-thumbnail hentry category-travel tag-mountain tag-winter" style="margin-bottom:60px;">
-                                                    <div class="btx-entry-inner anmt-item anmt-fadein">
-                                                        <div class="btx-entry-timeline-icon btx-p-border-bg"></div>
-                                                        <div class="btx-entry-header">
-                                                            <div class="btx-entry-media btx-s-text-color">
-                                                                <a class="" href="#"><img src="upload/blog-winter-1024x683.jpg" alt="" width="1024" height="683"  /></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="btx-entry-body direction-rtl">
-                                                            <div class="btx-entry-body-inner btx-s-bg-bg " style="background-color:rgba(255,255,255,1); border-color:#ffffff; padding:40px;">
-                                                                <div class="btx-entry-timeline-header btx-p-border-border btx-s-text-color btx-primary-font">
-                                                                    <div class="btx-entry-timeline-day float-right">30</div>
-                                                                    <div class="btx-entry-timeline-subheader">
-                                                                        <h4>December</h4>
-                                                                        <h4>2015</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <h4 class="btx-entry-title btx-s-text-color btx-secondary-font">
-                                                                    <a href="#">Hey folks, it&#8217;s winter</a>
-                                                                </h4>
-                                                                <div class="btx-entry-excerpt text-justify">Sed ac nisi nec dui lacinia ornare. Phasellus sed mattis lorem. Praesent metus sem, gravida sit amet ornare a, rhoncus sit amet mi. Nam ac nisi elit. Vivamus congue sollicitudin mollis.</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                                <article class="btx-entry btx-entry--standard  post-139 post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-life tag-style" style="margin-bottom:60px;">
-                                                    <div class="btx-entry-inner anmt-item anmt-fadein">
-                                                        <div class="btx-entry-timeline-icon btx-p-border-bg"></div>
-                                                        <div class="btx-entry-header">
-                                                            <div class="btx-entry-media btx-s-text-color">
-                                                                <a class="" href="#"><img src="upload/blog-paint-1024x683.jpg" alt="" width="1024" height="683"  /></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="btx-entry-body direction-rtl">
-                                                            <div class="btx-entry-body-inner btx-s-bg-bg " style="background-color:rgba(255,255,255,1); border-color:#ffffff; padding:40px;">
-                                                                <div class="btx-entry-timeline-header btx-p-border-border btx-s-text-color btx-primary-font">
-                                                                    <div class="btx-entry-timeline-day float-right">26</div>
-                                                                    <div class="btx-entry-timeline-subheader">
-                                                                        <h4>December</h4>
-                                                                        <h4>2015</h4>
-                                                                    </div>
-                                                                </div>
-
-                                                                <h4 class="btx-entry-title btx-s-text-color btx-secondary-font">
-                                                                    <a href="#">The bluish shade of gray</a>
-                                                                </h4>
-
-                                                                <div class="btx-entry-excerpt text-justify">Mauris at bibendum ante. Vivamus turpis elit, rhoncus vel felis id, pulvinar sodales justo. Proin ante ex, molestie sit amet molestie in, volutpat ut nunc. Nam eu quam porta, volutpat nulla eget.</div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                                <article class="btx-entry btx-entry--standard  post-141 post type-post status-publish format-standard has-post-thumbnail hentry category-travel tag-mountain tag-winter" style="margin-bottom:60px;">
-                                                    <div class="btx-entry-inner anmt-item anmt-fadein">
-                                                        <div class="btx-entry-timeline-icon btx-p-border-bg"></div>
-                                                        <div class="btx-entry-header">
-                                                            <div class="btx-entry-media btx-s-text-color">
-                                                                <a class="" href="#"><img src="upload/blog-winter-1024x683.jpg" alt="" width="1024" height="683"  /></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="btx-entry-body direction-rtl">
-                                                            <div class="btx-entry-body-inner btx-s-bg-bg " style="background-color:rgba(255,255,255,1); border-color:#ffffff; padding:40px;">
-                                                                <div class="btx-entry-timeline-header btx-p-border-border btx-s-text-color btx-primary-font">
-                                                                    <div class="btx-entry-timeline-day float-right">30</div>
-                                                                    <div class="btx-entry-timeline-subheader">
-                                                                        <h4>December</h4>
-                                                                        <h4>2015</h4>
-                                                                    </div>
-                                                                </div>
-                                                                <h4 class="btx-entry-title btx-s-text-color btx-secondary-font">
-                                                                    <a href="#">Hey folks, it&#8217;s winter</a>
-                                                                </h4>
-                                                                <div class="btx-entry-excerpt text-justify">Sed ac nisi nec dui lacinia ornare. Phasellus sed mattis lorem. Praesent metus sem, gravida sit amet ornare a, rhoncus sit amet mi. Nam ac nisi elit. Vivamus congue sollicitudin mollis.</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                                <article class="btx-entry btx-entry--standard  post-139 post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-life tag-style" style="margin-bottom:60px;">
-                                                    <div class="btx-entry-inner anmt-item anmt-fadein">
-                                                        <div class="btx-entry-timeline-icon btx-p-border-bg"></div>
-                                                        <div class="btx-entry-header">
-                                                            <div class="btx-entry-media btx-s-text-color">
-                                                                <a class="" href="#"><img src="upload/blog-paint-1024x683.jpg" alt="" width="1024" height="683"  /></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="btx-entry-body direction-rtl">
-                                                            <div class="btx-entry-body-inner btx-s-bg-bg " style="background-color:rgba(255,255,255,1); border-color:#ffffff; padding:40px;">
-                                                                <div class="btx-entry-timeline-header btx-p-border-border btx-s-text-color btx-primary-font">
-                                                                    <div class="btx-entry-timeline-day float-right">26</div>
-                                                                    <div class="btx-entry-timeline-subheader">
-                                                                        <h4>December</h4>
-                                                                        <h4>2015</h4>
-                                                                    </div>
-                                                                </div>
-
-                                                                <h4 class="btx-entry-title btx-s-text-color btx-secondary-font">
-                                                                    <a href="#">The bluish shade of gray</a>
-                                                                </h4>
-
-                                                                <div class="btx-entry-excerpt text-justify">Mauris at bibendum ante. Vivamus turpis elit, rhoncus vel felis id, pulvinar sodales justo. Proin ante ex, molestie sit amet molestie in, volutpat ut nunc. Nam eu quam porta, volutpat nulla eget.</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </article>
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>

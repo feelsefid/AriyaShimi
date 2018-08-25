@@ -15,7 +15,7 @@
                 <div class="btx-post-media btx-post-media--standard">
                     <div class="btx-background" data-type="image" data-parallaxspeed="5" data-contentfade="1" data-mobileparallax="">
                         <div class="btx-background-wrapper">
-                            <div class="btx-background-inner" style="background-image:url({{ url('/') }}/site/images/news/NewsBackground.jpg); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
+                            <div class="btx-background-inner" style="background-image:url({{ url('/') }}/site/images/article/ArticleBackground.jpg); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
                         </div>
                         <div class="btx-background-overlay "></div>
                     </div>
@@ -25,7 +25,7 @@
                         <div class="btx-main-wrapper">
                             <!--Post Title (overlap layout and full layout not standard post format)-->
                             <div class="btx-post-headline">
-                                <h3 class="btx-post-title">@lang('article.subject')</h3>
+                                <h3 class="btx-post-title">{{ $data->name }}</h3>
                             </div>
                             <!--Begin Main Post Part-->
                             <!--Content Part-->
@@ -33,11 +33,11 @@
                                 <div class="btx-item btx-image btx-overlapright-position modal-image">
                                     <div class="btx-image-container">
                                         <a class="btx-media-link" href="{{ url($data->image) }}" target="_blank">
-                                            <img src="{{ url($data->image) }}" alt="" style="max-width:100%;" />
+                                            <img src="{{ url($data->image) }}" alt="" style="max-width:100%;" width="1024" height="683" />
                                         </a>
                                     </div>
                                 </div>
-                                {!! $data->text !!}
+                                {!!  $data->text !!}
                             </div>
                         </div>
                     </div>
