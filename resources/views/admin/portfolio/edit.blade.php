@@ -154,7 +154,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('text',$data->description, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('text', $data->description, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor1']) }}
                                                     @if ($errors->has('text'))
                                                         <spnan class="cr-warning">{{ $errors->first('text') }}</spnan>
                                                     @endif
@@ -195,7 +195,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('standard_text', $data->standard_text , ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('standard_text', $data->standard_text , ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor2']) }}
                                                     @if ($errors->has('standard_text'))
                                                         <spnan class="cr-warning">{{ $errors->first('standard_text') }}</spnan>
                                                     @endif
@@ -237,7 +237,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('usages_text', $data->usages_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('usages_text', $data->usages_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor3']) }}
                                                     @if ($errors->has('usages_text'))
                                                         <spnan class="cr-warning">{{ $errors->first('usages_text') }}</spnan>
                                                     @endif
@@ -281,7 +281,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('mazaya_text', $data->mazaya_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('mazaya_text', $data->mazaya_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor4']) }}
                                                     @if ($errors->has('mazaya_text'))
                                                         <spnan class="cr-warning">{{ $errors->first('mazaya_text') }}</spnan>
                                                     @endif
@@ -354,7 +354,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('masraf_text', $data->masraf_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('masraf_text', $data->masraf_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor5']) }}
                                                     @if ($errors->has('masraf_text'))
                                                         <spnan class="cr-warning">{{ $errors->first('masraf_text') }}</spnan>
                                                     @endif
@@ -398,7 +398,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('amadesazi_text', $data->amadesazi_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('amadesazi_text', $data->amadesazi_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor6']) }}
                                                     @if ($errors->has('amadesazi_text'))
                                                         <spnan class="cr-warning">{{ $errors->first('amadesazi_text') }}</spnan>
                                                     @endif
@@ -442,7 +442,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('sakht_text', $data->sakht_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('sakht_text', $data->sakht_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor7']) }}
                                                     @if ($errors->has('sakht_text'))
                                                         <spnan class="cr-warning">{{ $errors->first('sakht_text') }}</spnan>
                                                     @endif
@@ -486,7 +486,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('ejra_text', $data->ejra_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('ejra_text', $data->ejra_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor8']) }}
                                                     @if ($errors->has('ejra_text'))
                                                         <spnan class="cr-warning">{{ $errors->first('ejra_text') }}</spnan>
                                                     @endif
@@ -530,7 +530,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('negahdari_text', $data->negahdari_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('negahdari_text', $data->negahdari_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor9']) }}
                                                     @if ($errors->has('negahdari_text'))
                                                         <spnan class="cr-warning">{{ $errors->first('negahdari_text') }}</spnan>
                                                     @endif
@@ -574,7 +574,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('time_text', $data->time_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('time_text', $data->time_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor10']) }}
                                                     @if ($errors->has('time_text'))
                                                         <spnan class="cr-warning">{{ $errors->first('time_text') }}</spnan>
                                                     @endif
@@ -618,7 +618,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('imeni_text', $data->imeni_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('imeni_text', $data->imeni_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor11']) }}
                                                     @if ($errors->has('imeni_text'))
                                                         <spnan class="cr-warning">{{ $errors->first('imeni_text') }}</spnan>
                                                     @endif
@@ -662,7 +662,7 @@
                                                     @lang('portfolio.text')
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
-                                                    {{ Form::textarea('fanni_text', $data->fanni_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10]) }}
+                                                    {{ Form::textarea('fanni_text', $data->fanni_text, ['class' => 'ckeditor', 'cols' => 100, 'rows' => 10, 'id' => 'ckeditor12']) }}
                                                     @if ($errors->has('fanni_text'))
                                                         <spnan class="cr-warning">{{ $errors->first('fanni_text') }}</spnan>
                                                     @endif

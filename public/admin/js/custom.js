@@ -110,6 +110,42 @@ $('form.ajax-submit').submit(function (e) {
     if($('#ckeditor').val() != null)
         $('#ckeditor').val(CKEDITOR.instances.ckeditor.getData());
 
+    if($('#ckeditor1').val() != null)
+        $('#ckeditor1').val(CKEDITOR.instances.ckeditor1.getData());
+
+    if($('#ckeditor2').val() != null)
+        $('#ckeditor2').val(CKEDITOR.instances.ckeditor2.getData());
+
+    if($('#ckeditor3').val() != null)
+        $('#ckeditor3').val(CKEDITOR.instances.ckeditor3.getData());
+
+    if($('#ckeditor4').val() != null)
+        $('#ckeditor4').val(CKEDITOR.instances.ckeditor4.getData());
+
+    if($('#ckeditor5').val() != null)
+        $('#ckeditor5').val(CKEDITOR.instances.ckeditor5.getData());
+
+    if($('#ckeditor6').val() != null)
+        $('#ckeditor6').val(CKEDITOR.instances.ckeditor6.getData());
+
+    if($('#ckeditor7').val() != null)
+        $('#ckeditor7').val(CKEDITOR.instances.ckeditor7.getData());
+
+    if($('#ckeditor8').val() != null)
+        $('#ckeditor8').val(CKEDITOR.instances.ckeditor8.getData());
+
+    if($('#ckeditor9').val() != null)
+        $('#ckeditor9').val(CKEDITOR.instances.ckeditor9.getData());
+
+    if($('#ckeditor10').val() != null)
+        $('#ckeditor10').val(CKEDITOR.instances.ckeditor10.getData());
+
+    if($('#ckeditor11').val() != null)
+        $('#ckeditor11').val(CKEDITOR.instances.ckeditor11.getData());
+
+    if($('#ckeditor12').val() != null)
+        $('#ckeditor12').val(CKEDITOR.instances.ckeditor12.getData());
+
     var btn = $(this).find("button[type=submit]:focus" );
     var form = e.target;
     var data = new FormData(form);

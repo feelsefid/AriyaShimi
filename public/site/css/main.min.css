@@ -9391,7 +9391,7 @@ screen and (max-height:300px) {
     display: inline-block;
     position: relative;
     top: -4px;
-    width: 22px;
+    width: 30px;
     height: 2px;
     -webkit-transition-property: background;
     -moz-transition-property: background;
@@ -9409,7 +9409,7 @@ screen and (max-height:300px) {
     display: inline-block;
     position: absolute;
     left: 0;
-    width: 22px;
+    width: 30px;
     height: 2px;
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
@@ -9424,11 +9424,11 @@ screen and (max-height:300px) {
 }
 
 .btx-lines:before {
-    top: 6px
+    top: 8px
 }
 
 .btx-lines:after {
-    top: -6px
+    top: -8px
 }
 
 .btx-collapsed-button.btx-closed .btx-lines {
@@ -9788,7 +9788,7 @@ screen and (max-height:300px) {
 .btx-side-navbar--minimal .btx-side-navbar-nav {
     display: table;
     position: fixed;
-    top: 3%
+    top: 5%
 }
 
 .btx-side-navbar--minimal .btx-side-navbar-nav>* {

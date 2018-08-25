@@ -450,7 +450,7 @@
                                                         @continue
                                                     @endif
                                                     <article class="btx-entry btx-entry-dark-scheme btx-col-12 post-305 btx_portfolio type-btx_portfolio status-publish has-post-thumbnail hentry btx_portfolio_category-branding btx_portfolio_category-web-design" style="padding:0 0px; margin-bottom:0px;" data-filter="Branding, Web Design">
-                                                        <a href="#" class="btx-entry-inner anmt-item anmt-zoomout stagger anmt-content-slideup anmt-image-slowzoom">
+                                                        <a href="#" class="btx-entry-inner anmt-item stagger anmt-content-slideup ">
                                                             <div class="btx-entry-header ">
                                                                 <div class="btx-entry-media">
                                                                     @if(!empty(explode(',', $row['image'])[1]))
@@ -490,8 +490,7 @@
                                             <div class="btx-row" id="div_f52f_92">
                                                 <div class="btx-text-content btx-col-12" id="div_f52f_93">
                                                     <div class="btx-text-content-inner">
-                                                            <span class="font-style" id="span_f52f_40">طراحی وب سایت و بهینه سازی وب سایت توسط آژانس فیل سفید
-                                                            </span>
+                                                        <span class="font-style" id="span_f52f_40">طراحی وب سایت و بهینه سازی وب سایت توسط آژانس فیل سفید</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -501,24 +500,24 @@
                                         <div class="btx-item js-item-social btx-social btx-social--plain btx-center-align btx-center-align-responsive">
                                             <div class="btx-social-inner">
                                                 <a href="http://www.instagram.com/" class="btx-social-item btx-social-instagram" target="_blank">
-                                                        <span class="btx-icon btx-icon--with-hover btx-icon--plain btx-icon--hover-plain btx-icon--small">
-                                                            <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" id="span_f52f_45">
-                                                                <i class="fa fa-instagram"></i>
-                                                            </span>
-                                                            <span class="btx-icon-hover btx-icon-plain btx-s-brand-color" id="span_f52f_46">
-                                                                <i class="fa fa-instagram"></i>
-                                                            </span>
+                                                    <span class="btx-icon btx-icon--with-hover btx-icon--plain btx-icon--hover-plain btx-icon--small">
+                                                        <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" id="span_f52f_45">
+                                                            <i class="fa fa-instagram"></i>
                                                         </span>
+                                                        <span class="btx-icon-hover btx-icon-plain btx-s-brand-color" id="span_f52f_46">
+                                                            <i class="fa fa-instagram"></i>
+                                                        </span>
+                                                    </span>
                                                 </a>
                                                 <a href="http://www.google.com/" class="btx-social-item btx-social-google-plus" target="_blank">
-                                                        <span class="btx-icon btx-icon--with-hover btx-icon--plain btx-icon--hover-plain btx-icon--small">
-                                                            <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" id="span_f52f_47">
-                                                                <i class="fa fa-envelope"></i>
-                                                            </span>
-                                                            <span class="btx-icon-hover btx-icon-plain btx-s-brand-color" id="span_f52f_48">
-                                                                <i class="fa fa-envelope"></i>
-                                                            </span>
+                                                    <span class="btx-icon btx-icon--with-hover btx-icon--plain btx-icon--hover-plain btx-icon--small">
+                                                        <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" id="span_f52f_47">
+                                                            <i class="fa fa-envelope"></i>
                                                         </span>
+                                                        <span class="btx-icon-hover btx-icon-plain btx-s-brand-color" id="span_f52f_48">
+                                                            <i class="fa fa-envelope"></i>
+                                                        </span>
+                                                    </span>
                                                 </a>
                                             </div>
                                         </div>
