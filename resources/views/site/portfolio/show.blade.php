@@ -89,7 +89,7 @@
                                                         <div class="btx-row" style="margin:0 -30px;">
                                                             <div class="btx-text-content btx-col-12" style="padding:0 30px;">
                                                                 <div class="btx-text-content-inner">
-                                                                    <br><span style="color: rgb(255, 255, 255);">{{ $portfolio->standard_text }}</span>
+                                                                    <br><span style="color: rgb(255, 255, 255);">{!! $portfolio->standard_text !!}</span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -136,7 +136,7 @@
                                                             <div class="btx-text-content btx-col-12" style="padding:0 30px;">
                                                                 <div class="btx-text-content-inner">
                                                                     <br><span style="color: rgb(255, 255, 255);">
-                                                                        {{$portfolio->usages_text}}
+                                                                        {!! $portfolio->usages_text !!}
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -185,7 +185,7 @@
                                                                 <div class="btx-text-content-inner">
                                                                     <br>
                                                                     <span style="color: rgb(34, 34, 34);">
-                                                                        {{$portfolio->mazaya_text}}
+                                                                        {!! $portfolio->mazaya_text !!}
                                                                     </span>
                                                                     <br>
                                                                 </div>
@@ -277,7 +277,7 @@
                                                             <div class="btx-skill-item btx-col-12" data-percent="88" data-axis="horizontal">
                                                                 <div class="btx-skill-heading text-justify">
                                                                     <span class="btx-s-text-color">
-                                                                        {{$portfolio->masraf_text}}
+                                                                        {!! $portfolio->masraf_text !!}
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -313,7 +313,7 @@
                                                         <div class="btx-row">
                                                             <div class="btx-skill-item btx-col-12" data-percent="88" data-axis="horizontal">
                                                                 <div class="btx-skill-heading text-justify">
-                                                                    <span class="btx-s-text-color">{{$portfolio->amadesazi_text}}</span>
+                                                                    <span class="btx-s-text-color">{!! $portfolio->amadesazi_text !!}</span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -351,7 +351,7 @@
                                                                 </h2>
                                                             </div>
                                                             <div class="btx-quote-text btx-s-text-color btx-custom_c-font text-right">
-                                                                <span class="font-style direction-rtl" style="font-size: 13px;">{{$portfolio->sakht_text}}</span>
+                                                                <span class="font-style direction-rtl" style="font-size: 13px;">{!! $portfolio->sakht_text !!}</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -386,7 +386,7 @@
                                                                 <div class="btx-text-content btx-col-12" style="padding:0 30px;">
                                                                     <div class="btx-text-content-inner direction-rtl text-justify">
                                                                         <span class="font-style" style="font-size: 13px;">
-                                                                            {{$portfolio->ejra_text}}
+                                                                            {!! $portfolio->ejra_text !!}
                                                                         </span>
                                                                     </div>
                                                                 </div>
@@ -457,7 +457,7 @@
                                                         <div class="btx-row" style="margin:0 -30px;">
                                                             <div class="btx-text-content btx-col-12" style="padding:0 30px;">
                                                                 <div class="btx-text-content-inner">
-                                                                    <br><span style="color: #fff;">{{ $portfolio->negahdari_text }}</span>
+                                                                    <br><span style="color: #fff;">{!! $portfolio->negahdari_text !!}</span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -501,7 +501,7 @@
                                                             <div class="btx-text-content btx-col-12" style="padding:0 30px;">
                                                                 <div class="btx-text-content-inner">
                                                                     <br><span style="color: #fff;">
-                                                                        {{$portfolio->time_text}}
+                                                                        {!! $portfolio->time_text !!}
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -545,7 +545,7 @@
                                                         <div class="btx-row" style="margin:0 -30px;">
                                                             <div class="btx-text-content btx-col-12" style="padding:0 30px;">
                                                                 <div class="btx-text-content-inner">
-                                                                    <br><span style="color: #fff;">{{$portfolio->imeni_text}}</span>
+                                                                    <br><span style="color: #fff;">{!! $portfolio->imeni_text !!}</span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -578,7 +578,7 @@
                                                     </div>
                                                     <div class="btx-item js-item-text btx-text btx-center-align btx-primary-font">
                                                         <div class="btx-row" style="margin:0 -30px;">
-                                                            <span style="font-size: 13px;">{{ $portfolio->fanni_text }}</span>
+                                                            <span style="font-size: 13px;">{!! $portfolio->fanni_text !!}</span>
                                                         </div>
                                                     </div>
                                                 </div>
