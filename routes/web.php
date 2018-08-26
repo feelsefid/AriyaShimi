@@ -22,8 +22,8 @@ Route::group(['namespace' => 'Site'], function () {
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('/about', 'AboutController@index')->name('about');
     Route::get('/portfolio', 'PortfolioController@index');
-    Route::get('/portfolio/{id}/cat', 'PortfolioController@index');
-    Route::get('/portfolio/{id}', 'PortfolioController@show');
+    Route::get('/portfolio/{category_id}/cat', 'PortfolioController@indexWithCategory');
+    Route::get('/portfolio/{id}/{title}', 'PortfolioController@show');
     Route::get('/articles', 'ArticleController@index');
     Route::get('/articles/{id}', 'ArticleController@article_show');
     Route::get('/articles/{id}/{title}', 'ArticleController@article_show');
@@ -187,7 +187,7 @@ Route::group(['prefix' => 'panel', 'namespace' => 'Admin'], function () {
     Route::get('permission/role/{id}/edit', 'PermissionController@role_edit')->middleware('permission:edit.permission');
     Route::put('permission/role/{id}', 'PermissionController@role_update')->middleware('permission:edit.permission');
 
-    //-- Permission And User --------------------------------------------------------------------------------------
+    //-- Permission And User ------------------ --------------------------------------------------------------------
     Route::get('permission/user/{id}/edit', 'PermissionController@user_edit')->middleware('permission:edit.permission');
     Route::put('permission/user/{id}', 'PermissionController@user_update')->middleware('permission:edit.permission');
 

@@ -27,8 +27,8 @@ class ContactsController extends Controller
     public function index()
     {
         $setting = Setting::where('status', 1)->where('language', app()->getLocale())->first();
-
-        return view('site.contact.index', compact('setting'));
+        $title="تماس با ما";
+        return view('site.contact.index', compact('setting','title'));
     }
     
     

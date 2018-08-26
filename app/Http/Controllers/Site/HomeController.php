@@ -7,6 +7,7 @@ use App\Models\ArticleCategory;
 use App\Models\Deg360;
 use App\Models\Setting;
 use App\Models\SlideShow;
+use function GuzzleHttp\Promise\queue;
 use Illuminate\Http\Request;
 use Illuminate\Mail\Mailer;
 use Illuminate\Support\Facades\Mail;
@@ -33,10 +34,10 @@ class HomeController extends Controller
     public function index()
     {
         $setting = Setting::where('status', 1)->where('language', app()->getLocale())->first();
+        $title=$setting->title;
         $data = ArticleCategory::with('articles')->where('module', 'home')->first()->toArray();
         $data = array_reverse($data['articles']);
-
-        return view('site.home', compact('setting', 'data'));
+        return view('site.home', compact('setting', 'data','title'));
     }
 
     public function sendMessage(Request $request)

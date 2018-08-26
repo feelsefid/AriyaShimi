@@ -29,35 +29,35 @@ class ArticleController extends Controller
     public function index()
     {
         $data = ArticleCategory::with('articles')->where('module', 'article')->first();
-
-        return view('site.article.index', compact('data'));
+        $title="اخبار و رویداد ها";
+        return view('site.article.index', compact('data','title'));
     }
 
     public function article_show($id)
     {
         $data = Article::find($id);
-
-        return view('site.article.article_show', compact('data'));
+        $title=$data->name;
+        return view('site.article.article_show', compact('data','title'));
     }
 
     public function blogs()
     {
         $data = ArticleCategory::with('articles')->where('module', 'blog')->first();
-
-        return view('site.article.blog', compact('data'));
+        $title="مقالات علمی";
+        return view('site.article.blog', compact('data','title'));
     }
 
     public function show($id)
     {
         $data = Article::find($id);
-
-        return view('site.article.show', compact('data'));
+        $title=$data->name;
+        return view('site.article.show', compact('data','title'));
     }
 
     public function faq()
     {
         $data = ArticleCategory::with('articles')->where('module', 'faq')->first();
-
-        return view('site.article.faq', compact('data'));
+        $title="پرسش و پلسخ";
+        return view('site.article.faq', compact('data','title'));
     }
 }

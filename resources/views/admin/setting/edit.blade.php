@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    {{ Form::model($data, ['url' => url('panel/setting/' . $data->id), 'class' => 'form-horizontal ajax-submit', 'role' => 'form', 'method' => 'PUT']) }}
+    {{ Form::model($data, ['url' => url('panel/setting/' . $data->id), 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PUT']) }}
     {{ csrf_field() }}
     <div class="block-header">
         <div class="row">
@@ -225,7 +225,7 @@
                                     </div>
                                 </div>
 
-                                <div class="row clearfix">
+                                {{--<div class="row clearfix">
                                     <label class="col-lg-3 col-md-3 col-sm-4 form-control-label text-left">
                                         @lang('setting.underconstrution')
                                     </label>
@@ -244,12 +244,24 @@
 
                                 <div class="row clearfix">
                                     <label class="col-lg-3 col-md-3 col-sm-4 form-control-label text-left">
-                                        {{--@lang('setting.underconstrution_text')--}}
+                                        --}}{{--@lang('setting.underconstrution_text')--}}{{--
                                     </label>
                                     <div class="col-lg-9 col-md-9 col-sm-8">
                                         {{ Form::textarea('under_construction_text', null, ['id' => 'ckeditor', 'class' => 'form-control']) }}
                                         @if ($errors->has('under_construction_text'))
                                             <spnan class="cr-warning">{{ $errors->first('under_construction_text') }}</spnan>
+                                        @endif
+                                    </div>
+                                </div>--}}
+
+                                <div class="row clearfix mt-4">
+                                    <label class="col-lg-3 col-md-3 col-sm-4 form-control-label text-left">
+                                        درباره ما
+                                    </label>
+                                    <div class="col-lg-9 col-md-9 col-sm-8">
+                                        {{ Form::textarea('about', $data->about, ['id' => '', 'class' => 'form-control ckeditor']) }}
+                                        @if ($errors->has('about'))
+                                            <spnan class="cr-warning">{{ $errors->first('about') }}</spnan>
                                         @endif
                                     </div>
                                 </div>

@@ -4,7 +4,7 @@
     <!-- META TAGS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>@yield('title')</title>
+    <title>@if(isset($title)) {{$title}} @endif</title>
     @yield('seo')
     <link rel='stylesheet' href='{{ url('/') }}/site/css/bootstrap.min.css' type='text/css' media='all' />
     <link rel='stylesheet' href='{{ url('/') }}/site/css/font-awesome.css' type='text/css' media='all' />

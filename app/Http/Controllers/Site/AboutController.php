@@ -19,8 +19,8 @@ class AboutController extends Controller
     {
         $data = ArticleCategory::with('articles')->where('module', 'about')->first();
         $consent = ArticleCategory::with('articles')->where('module', 'consent')->first();
-
-        return view('site.about.index', compact('data', 'consent'));
+        $title="درباره ما";
+        return view('site.about.index', compact('data', 'consent','title'));
     }
 
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Site;
 
 use App\Models\ArticleCategory;
 use App\Models\Portfolio;
+use App\Models\PortfolioCategory;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Article;
@@ -17,7 +18,16 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        return view('site.portfolio.index',compact('data'));
+        $title='محصولات';
+        $portfolios=Portfolio::orderByDesc('id')->paginate(5);
+        return view('site.portfolio.index',compact('portfolios','title'));
+    }
+
+    public function indexWithCategory($category_id)
+    {
+        $title=PortfolioCategory::find($category_id)->name;
+        $portfolios=Portfolio::where('portfolio_categories_id',$category_id)->paginate(5);
+        return view('site.portfolio.index',compact('portfolios','title'));
     }
 
     /**
@@ -50,8 +60,9 @@ class PortfolioController extends Controller
     public function show($id)
     {
         $portfolio=Portfolio::find($id);
+        $title=$portfolio->name;
         $vizhegies=json_decode($portfolio->vizhegi);
-        return view('site.portfolio.show',compact('portfolio','vizhegies'));
+        return view('site.portfolio.show',compact('portfolio','vizhegies','title'));
     }
 
     /**

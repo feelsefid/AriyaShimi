@@ -270,7 +270,7 @@ class SettingController extends Controller
 
         $model->title = $request->input('title');
         $model->status = $request->input('status');
-
+        $model->about = $request->input('about');
         if(count($request->input('socials')) > 0) {
             $socials = json_encode(array_filter($request->input('socials')), JSON_UNESCAPED_UNICODE);
             $model->socials = $socials;
@@ -362,6 +362,8 @@ class SettingController extends Controller
                     return response()->json(['redirectPath' => url('panel/setting/' . $model->id . '/edit')]);
             }
         }
+
+        return redirect()->back();
     }
 
     /**

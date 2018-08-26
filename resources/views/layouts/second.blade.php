@@ -4,7 +4,7 @@
     <!-- META TAGS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>@yield('title')</title>
+    <title>@if(isset($title)) {{$title}} @endif</title>
     @yield('seo')
     <link rel='stylesheet' href='{{ url('/') }}/site/css/bootstrap.min.css' type='text/css' media='all' />
     <link rel='stylesheet' href='{{ url('/') }}/site/css/font-awesome.css' type='text/css' media='all' />
@@ -176,7 +176,9 @@
                                         <div class="btx-heading btx-heading--default btx-heading--underline btx-p-border-border btx-s-text-border">
                                             <h3 class="btx-heading-text  btx-s-text-color">درباره ما</h3>
                                         </div>
-                                        <div class="textwidget text-justify">شرکت آریاشیمی با بیش از ۱۲ سال سابقه مفید و درخشان در زمینه تولید انواع مواد شیمیایی ساختمان و مواد افزودنی بتن، تلاش دارد تا به عنوان برندی پیشرو و نوآور فعالیت کند.</div>
+                                        <div class="textwidget text-justify">
+                                            {!! $setting->about !!}
+                                        </div>
                                     </li>
                                 </ul>
                             </div>

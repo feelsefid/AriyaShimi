@@ -23,7 +23,11 @@ class AppServiceProvider extends ServiceProvider
 
         $footerMenuLabels = MenuCategory::with('menus')->where('module', 'footerMenuLabels')->first();
 
-        view()->share(['setting' => $setting, 'footerMenuLabels' => $footerMenuLabels, 'footerMenuLinks' => $footerMenuLinks]);
+        view()->share([
+            'setting' => $setting,
+            'footerMenuLabels' => $footerMenuLabels,
+            'footerMenuLinks' => $footerMenuLinks
+        ]);
     }
 
     /**
