@@ -79,6 +79,20 @@
                                                 </div>
                                             </div>
 
+                                            <!-- model -->
+                                            <div class="row clearfix">
+                                                <label class="col-lg-2 col-md-2 col-sm-4 form-control-label text-left">
+                                                    <span class="required">*</span>
+                                                    @lang('article.model')
+                                                </label>
+                                                <div class="col-lg-10 col-md-10 col-sm-8">
+                                                    {{ Form::text('model', null, ['class' => 'form-control']) }}
+                                                    @if ($errors->has('name'))
+                                                        <spnan class="cr-warning">{{ $errors->first('model') }}</spnan>
+                                                    @endif
+                                                </div>
+                                            </div>
+
                                             <!-- category -->
                                             <div class="row clearfix">
                                                 <label class="col-lg-2 col-md-2 col-sm-4 form-control-label text-left">

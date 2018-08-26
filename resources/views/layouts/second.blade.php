@@ -283,6 +283,7 @@
 </div>
 
 <script type='text/javascript' src='{{ url('/') }}/site/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='{{ url('/') }}/site/js/ajax.js'></script>
 <script type='text/javascript' src='{{ url('/') }}/site/js/jquery/jquery-migrate.min.js'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */

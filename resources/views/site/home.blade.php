@@ -450,7 +450,7 @@
                                                         @continue
                                                     @endif
                                                     <article class="btx-entry btx-entry-dark-scheme btx-col-12 post-305 btx_portfolio type-btx_portfolio status-publish has-post-thumbnail hentry btx_portfolio_category-branding btx_portfolio_category-web-design" style="padding:0 0px; margin-bottom:0px;" data-filter="Branding, Web Design">
-                                                        <a href="#" class="btx-entry-inner anmt-item stagger anmt-content-slideup ">
+                                                        <div  class="btx-entry-inner anmt-item stagger anmt-content-slideup ">
                                                             <div class="btx-entry-header ">
                                                                 <div class="btx-entry-media">
                                                                     @if(!empty(explode(',', $row['image'])[1]))
@@ -459,7 +459,7 @@
                                                                 </div>
                                                                 <div class="btx-overlay" style="background-color:rgba(9,77,156,0.8);"></div>
                                                             </div>
-                                                            <div class="btx-entry-body title-middle" style="padding:30px;">
+                                                            <div class="btx-entry-body title-middle" style="padding:30px;overflow-y: scroll;">
                                                                 <div class="btx-entry-body-inner">
                                                                     <div class="btx-entry-body-content">
                                                                         <h4 class="btx-entry-title btx-s-text-color btx-secondary-font" style="font-size:18px;">
@@ -471,7 +471,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </a>
+                                                        </div>
                                                     </article>
                                                 @endforeach
                                             </div>

@@ -7,5 +7,8 @@ use App\Http\Controllers\Controller;
 
 class AjaxController extends Controller
 {
+    public function index(Request $request)
+    {
 
+    }
 }

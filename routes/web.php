@@ -23,9 +23,10 @@ Route::group(['namespace' => 'Site'], function () {
     Route::get('/about', 'AboutController@index')->name('about');
     Route::get('/portfolio', 'PortfolioController@index');
     Route::get('/portfolio/{category_id}/cat', 'PortfolioController@indexWithCategory');
+    Route::get('/portfolio/loadmore', 'PortfolioController@loadmore');
     Route::get('/portfolio/{id}/{title}', 'PortfolioController@show');
     Route::get('/articles', 'ArticleController@index');
-    Route::get('/articles/{id}', 'ArticleController@article_show');
+    Route::get('/articles/{id}/', 'ArticleController@article_show');
     Route::get('/articles/{id}/{title}', 'ArticleController@article_show');
     Route::get('/blogs', 'ArticleController@blogs');
     Route::get('/blogs/{id}', 'ArticleController@show');
@@ -41,7 +42,7 @@ Route::group(['namespace' => 'Site'], function () {
  ****************************************************/
 Route::group(['prefix' => 'panel', 'namespace' => 'Admin'], function () {
     Route::get('/', 'HomeController@index')->name('home')->middleware('auth');
-    Route::post('/ajax', 'AjaxController@store');
+    Route::post('/ajax', 'AjaxController@index');
 
     //-- Article --------------------------------------------------------------------------------------
     Route::get('article', 'ArticleController@index')->middleware('permission:view.article');

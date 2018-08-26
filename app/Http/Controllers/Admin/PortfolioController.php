@@ -78,7 +78,7 @@ class PortfolioController extends Controller
 
         return view('admin.portfolio.index', compact('data', 'filter', 'categories'));
     }
-
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -94,7 +94,7 @@ class PortfolioController extends Controller
 
         return view('admin.portfolio.create', compact('categories'));
     }
-
+    
     /**
      * Store a newly created resource in storage.
      *
@@ -131,7 +131,7 @@ class PortfolioController extends Controller
             $model->portfolio_categories_id = $request->input('portfolio_categories_id');
             $model->name = $request->input('name');
             $model->default_image = $request->input('default_image');
-
+            $model->model = $request->input('model');
             $model->standard_text = $request->input('standard_text');
             $model->standard_image = $request->input('standard_image');
 
@@ -269,7 +269,7 @@ class PortfolioController extends Controller
         $model->portfolio_categories_id = $request->input('portfolio_categories_id');
         $model->name = $request->input('name');
         $model->default_image = $request->input('default_image');
-
+        $model->model = $request->input('model');
         $model->standard_text = $request->input('standard_text');
         $model->standard_image = $request->input('standard_image');
 

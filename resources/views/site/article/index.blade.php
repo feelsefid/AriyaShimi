@@ -57,7 +57,7 @@
                                                         </div>
                                                         <div class="btx-entry-body text-right" style="padding:40px;">
                                                             <h4 class="btx-entry-title btx-s-text-color btx-secondary-font">
-                                                                <a href="{{ url('articles/' . $row->id) }}">
+                                                                <a href="{{ url('articles/' . $row->id.'/'.str_replace(' ','_',$portfolio->name)) }}">
                                                                     {{ $row->name }}
                                                                 </a>
                                                             </h4>

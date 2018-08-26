@@ -19,8 +19,14 @@ class PortfolioController extends Controller
     public function index()
     {
         $title='محصولات';
-        $portfolios=Portfolio::orderByDesc('id')->paginate(5);
+        $portfolios=Portfolio::orderByDesc('id')->paginate(6);
         return view('site.portfolio.index',compact('portfolios','title'));
+    }
+
+    public function loadmore()
+    {
+        $portfolios=Portfolio::orderByDesc('id')->paginate(6);
+        return view('site.portfolio.items',compact('portfolios'));
     }
 
     public function indexWithCategory($category_id)

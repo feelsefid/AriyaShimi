@@ -43,7 +43,7 @@
                 <div class="btx-collapsed-menu btx-collapsed-menu--minimal">
                     <div class="btx-navbar-header">
                         <a class="btx-navbar-brand" href="index.html">
-                            <img src="{{ url('' . @$setting->logo) }}">
+                            <img src="{{ url($setting->logo) }}">
                         </a>
                     </div>
                     <ul id="menu-main-menu" class="btx-navbar-nav btx-menu">
@@ -95,7 +95,7 @@
                 <div class="btx-navbar-content-wrapper">
                     <div class="btx-navbar-header">
                         <a class="btx-navbar-brand" href="index.html">
-                            <img src="{{ url('/') }}/site/images/logo/loho-AryaShimi.png" alt="">
+                            <img src="{{ url($setting->logo2) }}" alt="">
                         </a>
                     </div>
                     <a class="btx-collapsed-button" href="#" data-target=".btx-collapsed-menu">
@@ -128,6 +128,7 @@
     @yield('content')
 </div>
 <script type='text/javascript' src='{{ url('/') }}/site/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='{{ url('/') }}/site/js/ajax.js'></script>
 <script type='text/javascript' src='{{ url('/') }}/site/js/jquery/jquery-migrate.min.js'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
