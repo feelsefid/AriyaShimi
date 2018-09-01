@@ -128,7 +128,7 @@
                                                             <span class="input-group-addon" onclick="BrowseServer('thumbnail');" style="cursor: pointer" id="span-thumbnail">
                                                                 <i class="fa fa-search" style="line-height: 60px;"></i>
                                                             </span>
-                                                        {{ Form::text('thumbnail', $data->default_image, ['class' => 'form-control textright pfDefaultImage', 'id' => 'thumbnail','style' => 'height:82px;']) }}
+                                                        {{ Form::text('thumbnail', $data->thumbnail, ['class' => 'form-control textright pfDefaultImage', 'id' => 'thumbnail','style' => 'height:82px;']) }}
                                                     </div>
                                                     @if ($errors->has('thumbnail'))
                                                         <spnan class="cr-warning">{{ $errors->first('thumbnail') }}</spnan>

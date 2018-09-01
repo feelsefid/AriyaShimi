@@ -512,10 +512,10 @@
                                                 <a href="http://www.google.com/" class="btx-social-item btx-social-google-plus" target="_blank">
                                                     <span class="btx-icon btx-icon--with-hover btx-icon--plain btx-icon--hover-plain btx-icon--small">
                                                         <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" id="span_f52f_47">
-                                                            <i class="fa fa-envelope"></i>
+                                                            <i class="fa fa-telegram"></i>
                                                         </span>
                                                         <span class="btx-icon-hover btx-icon-plain btx-s-brand-color" id="span_f52f_48">
-                                                            <i class="fa fa-envelope"></i>
+                                                            <i class="fa fa-telegram"></i>
                                                         </span>
                                                     </span>
                                                 </a>

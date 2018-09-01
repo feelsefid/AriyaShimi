@@ -4,13 +4,13 @@ h1, h2, h3, h4, h5, h6 {
 	font-family:'IRANSans', sans-serif; font-style:normal; font-weight:500;}
 
 .btx-primary-font {
-	font-family:'IRANSans', sans-serif; font-style:normal; font-weight:normal;}
+	font-family:'IRANSans', sans-serif; font-style:normal; font-weight:300;}
 .btx-secondary-font {
 	font-family:'IRANSans', sans-serif; font-style:normal; font-weight:300;}
 .btx-custom_a-font {
-	font-family:'IRANSans', sans-serif; font-style:normal; font-weight:normal;}
+	font-family:'IRANSans', sans-serif; font-style:normal; font-weight:300;}
 .btx-custom_b-font {
-	font-family:'IRANSans', sans-serif; font-style:normal; font-weight:normal;}
+	font-family:'IRANSans', sans-serif; font-style:normal; font-weight:300;}
 .btx-custom_c-font {
 	font-family:'IRANSans', sans-serif; font-style:normal; font-weight:300;}
 
@@ -147,7 +147,7 @@ input, textarea, select {color: #303030; background-color: #ffffff; border-color
 .btx-light-scheme .btx-p-text-bg {background-color: #898989;}
 .btx-slider-dark-scheme .btx-p-text-bg, .btx-entry-dark-scheme .btx-p-text-bg {background-color: #a4a4a4;}
 .btx-slider-light-scheme .btx-p-text-bg, .btx-entry-light-scheme .btx-p-text-bg {background-color: #898989;}
-.btx-s-text-color {color: #303030;}
+.btx-s-text-color {color: rgb(137, 137,137);}
 .btx-dark-scheme .btx-s-text-color {color: #ffffff;}
 .btx-light-scheme .btx-s-text-color {color: #303030;}
 .btx-slider-dark-scheme .btx-s-text-color, .btx-entry-dark-scheme .btx-s-text-color {color: #ffffff;}
@@ -1087,7 +1087,7 @@ img.btx-navbar-logo--image {
 }
 
 body {
-	font-family:'IRANSans', sans-serif; font-style:normal; font-weight:normal;	font-size: 13px;
+	font-family:'IRANSans', sans-serif; font-style:normal; font-weight:300;	font-size: 13px;
 }
 
 .btx-section-wrapper,
@@ -1096,15 +1096,15 @@ body {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 16px;
 }
 
 h2 {
-	font-size: 25px;
+	font-size: 16px;
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 h4 {

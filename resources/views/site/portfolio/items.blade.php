@@ -10,7 +10,7 @@
                         <div class="btx-background" data-type="image" data-parallaxspeed="0" data-contentfade="" data-mobileparallax="">
                             <div class="btx-background-wrapper">
                                 <a href="{{url('portfolio/'.$portfolio->id.'/'.str_replace(' ','_',$portfolio->name))}}">
-                                    <div class="btx-background-inner" style="background-image:url({{url($portfolio->default_image)}}); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
+                                    <div class="btx-background-inner" style="background-image:url({{url($portfolio->thumbnail)}}); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
                                 </a>
                             </div>
                             <div class="btx-background-overlay " style="opacity:0.9;"></div>
@@ -112,7 +112,7 @@
                         <div class="btx-background" data-type="image" data-parallaxspeed="0" data-contentfade="" data-mobileparallax="">
                             <div class="btx-background-wrapper">
                                 <a href="{{url('portfolio/'.$portfolio->id.'/'.str_replace(' ','_',$portfolio->name))}}">
-                                     <div class="btx-background-inner" style="background-image:url({{url($portfolio->default_image)}}); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
+                                     <div class="btx-background-inner" style="background-image:url({{url($portfolio->thumbnail)}}); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
                                 </a>
                             </div>
                         </div>

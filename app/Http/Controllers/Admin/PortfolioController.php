@@ -131,6 +131,7 @@ class PortfolioController extends Controller
             $model->portfolio_categories_id = $request->input('portfolio_categories_id');
             $model->name = $request->input('name');
             $model->default_image = $request->input('default_image');
+            $model->thumbnail = $request->input('thumbnail');
             $model->model = $request->input('model');
             $model->standard_text = $request->input('standard_text');
             $model->standard_image = $request->input('standard_image');
@@ -269,6 +270,7 @@ class PortfolioController extends Controller
         $model->portfolio_categories_id = $request->input('portfolio_categories_id');
         $model->name = $request->input('name');
         $model->default_image = $request->input('default_image');
+        $model->thumbnail = $request->input('thumbnail');
         $model->model = $request->input('model');
         $model->standard_text = $request->input('standard_text');
         $model->standard_image = $request->input('standard_image');

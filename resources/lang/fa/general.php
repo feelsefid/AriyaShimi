@@ -44,16 +44,16 @@ return [
 				      <img id="logofooter" class="logofooter" src="' . url('general/images/FeelSefid.png') . '">
 				      ',
 
-    'footer_text_inverse' => '<a class="feelsefid" href="http://www.feelsefid.com/">
+    'footer_text_inverse' => '
+                      <a class="feelsefid2" href="http://www.feelsefid.com/">
 					  طراحی سایت
 				      </a>
 				      و
-				      <a class="feelsefid" href="http://www.feelsefid.com/">
+				      <a class="feelsefid2" href="http://www.feelsefid.com/">
 					  بهینه سازی سایت
 				      </a>
-				      <br>
 				      آژانس فیل سفید
-				      <img id="logofooter" class="logofooter" src="' . url('general/images/FeelSefidInverse.png') . '">
+                      <img id="logofooter2" class="logofooter2" src="' . url('general/images/FeelSefidInverse.png') . '">
 				      ',
 
     'fullname' => 'نام و نام خانوادگی',

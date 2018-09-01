@@ -39,7 +39,7 @@
                                         </div>
                                         <div class="btx-item js-item-image btx-image btx-center-align" >
                                             <div class="btx-image-container">
-                                                <img src="{{ url($portfolio->default_image) }}" alt=""  width="768" height="512" />
+                                                <img src="{{ url($portfolio->default_image) }}" alt="{{ $portfolio->name }}"  />
                                             </div>
                                         </div>
                                     </div>

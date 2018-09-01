@@ -305,5 +305,12 @@
         $('#logofooter').removeClass('logofooter-hover').addClass('logofooter');
     });
 </script>
+<script>
+    $('.feelsefid2').mouseover(function(){
+        $('#logofooter2').removeClass('logofooter2').addClass('logofooter-hover2');
+    }).mouseout(function() {
+        $('#logofooter2').removeClass('logofooter-hover2').addClass('logofooter2');
+    });
+</script>
 </body>
 </html>

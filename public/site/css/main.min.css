@@ -4082,6 +4082,10 @@ fieldset {
     content: '\eb9e'
 }
 
+.fa-telegram:before {
+    content: '\f2c6'
+}
+
 .fa-gitlab:before {
     content: '\eb9f'
 }
@@ -9631,7 +9635,7 @@ screen and (max-height:300px) {
 }
 
 .btx-side-navbar .btx-navbar-brand {
-    padding-top: 60px;
+    padding-top: 0px;
     padding-bottom: 60px
 }
 
@@ -11011,7 +11015,7 @@ screen and (max-height:300px) {
 
 .btx-feature-title {
     line-height: 1.4;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400
 }
 
@@ -11029,7 +11033,7 @@ screen and (max-height:300px) {
 }
 
 .btx-feature--top .btx-feature-media {
-    margin-bottom: 30px
+    margin-bottom: 5px
 }
 
 .btx-feature--left .btx-feature-media {
@@ -16292,14 +16296,14 @@ cite {
 }
 
 .btx-testimonial-author-name {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700
 }
 
 .btx-testimonial-author-title {
     line-height: 18px;
-    font-size: 12px;
-    font-weight: 400
+    font-size: 13px;
+    font-weight: 300
 }
 
 .btx-testimonial--plain .btx-testimonial-media {
@@ -16437,7 +16441,7 @@ cite {
 .btx-box-content {
     width: 100%;
     max-height: 100%;
-    line-height: 1.78571;
+    line-height: 23px;
     font-size: 14px;
     vertical-align: middle;
     overflow-x: hidden
@@ -20632,7 +20636,7 @@ video {
 
 .btx-widgets h3 {
     font-size: 14px;
-    letter-spacing: .1em
+    letter-spacing: 0
 }
 
 .btx-widgets ul {
@@ -20646,7 +20650,7 @@ video {
 
 .btx-widgets .btx-heading>h3 {
     font-size: 13px;
-    font-weight: 700
+    font-weight: 300
 }
 
 .btx-widget {
@@ -25208,4 +25212,15 @@ mark {
 }
 .float-right{
     float: right !important;
+}
+.btx-navbar-widget-2{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    float: right;
+    margin-left: 0px;
+}
+.btx-navbar-widget-2 a{
+    color: rgb(137, 137, 137);
 }

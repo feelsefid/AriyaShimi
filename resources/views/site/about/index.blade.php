@@ -35,8 +35,8 @@
                             <div class="btx-row btx-row--main">
                                 <div class="btx-col-12">
                                     <div class="btx-item js-item-heading btx-heading btx-heading--plain btx-center-align">
-                                        <h1 class="btx-heading-text btx-secondary-font btx-s-text-color btx-s-text-border" style="letter-spacing:-0.03em;">
-                                            <span class="font-style font-style-big direction-rtl" style="font-size: 20px;">{{ $data->articles[0]->name }}</span>
+                                        <h1 class="btx-heading-text btx-secondary-font btx-s-text-color btx-s-text-border">
+                                            <span class="font-style font-style-big direction-rtl" style="font-size: 16px;">{{ $data->articles[0]->name }}</span>
                                         </h1>
                                     </div>
                                     <div class="btx-item js-item-divider btx-divider btx-divider--single btx-center-align" >
@@ -80,8 +80,8 @@
                             <div class="btx-row btx-row--main">
                                 <div class="btx-col-12">
                                     <div class="btx-item js-item-heading btx-heading btx-heading--plain btx-center-align" >
-                                        <h2 class="btx-heading-text btx-secondary-font btx-s-text-color btx-s-text-border" style="letter-spacing:-0.02em;">
-                                            <span class="font-style direction-rtl" style="font-size: 20px;">{{ $data->articles[1]->name }}</span>
+                                        <h2 class="btx-heading-text btx-secondary-font btx-s-text-color btx-s-text-border">
+                                            <span class="font-style direction-rtl" style="font-size: 16px;">{{ $data->articles[1]->name }}</span>
                                         </h2>
                                     </div>
                                     <div class="btx-item js-item-divider btx-divider btx-divider--single btx-center-align" >
@@ -99,7 +99,7 @@
                                                         <div class="btx-row" style="margin:0 -30px;">
                                                             <div class="btx-text-content btx-col-12" style="padding:0 30px;">
                                                                 <div class="btx-text-content-inner direction-rtl">
-                                                                    <span class="font-style" style="font-size: 14px;">
+                                                                    <span class="font-style" style="font-size: 13px;">
                                                                         {!! $data->articles[1]->text !!}
                                                                     </span>
                                                                 </div>
@@ -133,7 +133,7 @@
                                                                         </span>
                                                                     </div>
                                                                     <div class="btx-feature-body">
-                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl" style="letter-spacing:-0.01em;">انجمن مدیران کنترل کیفیت صنایع</div>
+                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl">انجمن مدیران کنترل کیفیت صنایع</div>
                                                                         <!--<div class="btx-feature-description direction-rtl">Suspendisse dignissim hendrerit turpis, in interdum tortor fermentum.</div>-->
                                                                     </div>
                                                                 </div>
@@ -141,14 +141,14 @@
                                                             <div class="btx-row" style="margin:0 -20px 40px;">
                                                                 <div class="btx-feature-item btx-p-border-border btx-col-12" style="padding:0 20px;">
                                                                     <div class="btx-feature-media ">
-                                                                                <span class="btx-icon btx-icon--plain btx-icon--hover-plain btx-icon--medium">
-                                                                                    <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" >
-                                                                                        <img src="{{ url(explode(',', $data->articles[1]->image)[2]) }}" alt="" width="100" height="100" />
-                                                                                    </span>
-                                                                                </span>
+                                                                        <span class="btx-icon btx-icon--plain btx-icon--hover-plain btx-icon--medium">
+                                                                            <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" >
+                                                                                <img src="{{ url(explode(',', $data->articles[1]->image)[2]) }}" alt="" width="100" height="100" />
+                                                                            </span>
+                                                                        </span>
                                                                     </div>
                                                                     <div class="btx-feature-body">
-                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl" style="letter-spacing:-0.01em;">انجمن دارندگان نشان استاندارد ایران</div>
+                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl">انجمن دارندگان نشان استاندارد ایران</div>
                                                                         <!--<div class="btx-feature-description direction-rtl">Suspendisse dignissim hendrerit turpis, in interdum tortor fermentum.</div>-->
                                                                     </div>
                                                                 </div>
@@ -156,14 +156,14 @@
                                                             <div class="btx-row" style="margin:0 -20px;">
                                                                 <div class="btx-feature-item btx-p-border-border btx-col-12" style="padding:0 20px;">
                                                                     <div class="btx-feature-media ">
-                                                                                <span class="btx-icon btx-icon--plain btx-icon--hover-plain btx-icon--medium">
-                                                                                    <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" >
-                                                                                        <img src="{{ url(explode(',', $data->articles[1]->image)[3]) }}" alt="" width="100" height="100" />
-                                                                                    </span>
-                                                                                </span>
+                                                                        <span class="btx-icon btx-icon--plain btx-icon--hover-plain btx-icon--medium">
+                                                                            <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" >
+                                                                                <img src="{{ url(explode(',', $data->articles[1]->image)[3]) }}" alt="" width="100" height="100" />
+                                                                            </span>
+                                                                        </span>
                                                                     </div>
                                                                     <div class="btx-feature-body">
-                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl" style="letter-spacing:-0.01em;">نشان ISO 9001</div>
+                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl">نشان ISO 9001</div>
                                                                         <!--<div class="btx-feature-description direction-rtl">Suspendisse dignissim hendrerit turpis, in interdum tortor fermentum.</div>-->
                                                                     </div>
                                                                 </div>
@@ -212,14 +212,14 @@
                                                             <div class="btx-row" style="margin:0 -20px 40px;">
                                                                 <div class="btx-feature-item btx-p-border-border btx-col-12" style="padding:0 20px;">
                                                                     <div class="btx-feature-media ">
-                                                                                <span class="btx-icon btx-icon--plain btx-icon--hover-plain btx-icon--medium">
-                                                                                    <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" >
-                                                                                        <img src="{{ url(explode(',', $data->articles[1]->image)[4]) }}" alt="" width="100" height="100" />
-                                                                                    </span>
-                                                                                </span>
+                                                                        <span class="btx-icon btx-icon--plain btx-icon--hover-plain btx-icon--medium">
+                                                                            <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" >
+                                                                                <img src="{{ url(explode(',', $data->articles[1]->image)[4]) }}" alt="" width="100" height="100" />
+                                                                            </span>
+                                                                        </span>
                                                                     </div>
                                                                     <div class="btx-feature-body">
-                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl" style="letter-spacing:-0.01em;">استاندارد ایران</div>
+                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl">استاندارد ایران</div>
                                                                         <!--<div class="btx-feature-description direction-rtl">Suspendisse dignissim hendrerit turpis, in interdum tortor fermentum.</div>-->
                                                                     </div>
                                                                 </div>
@@ -227,14 +227,14 @@
                                                             <div class="btx-row" style="margin:0 -20px 40px;">
                                                                 <div class="btx-feature-item btx-p-border-border btx-col-12" style="padding:0 20px;">
                                                                     <div class="btx-feature-media ">
-                                                                                <span class="btx-icon btx-icon--plain btx-icon--hover-plain btx-icon--medium">
-                                                                                    <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" >
-                                                                                        <img src="{{ url(explode(',', $data->articles[1]->image)[5]) }}" alt="" width="100" height="100" />
-                                                                                    </span>
-                                                                                </span>
+                                                                        <span class="btx-icon btx-icon--plain btx-icon--hover-plain btx-icon--medium">
+                                                                            <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" >
+                                                                                <img src="{{ url(explode(',', $data->articles[1]->image)[5]) }}" alt="" width="100" height="100" />
+                                                                            </span>
+                                                                        </span>
                                                                     </div>
                                                                     <div class="btx-feature-body">
-                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl" style="letter-spacing:-0.01em;">انجمن بتن ایران</div>
+                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl">انجمن بتن ایران</div>
                                                                         <!--<div class="btx-feature-description direction-rtl">Suspendisse dignissim hendrerit turpis, in interdum tortor fermentum.</div>-->
                                                                     </div>
                                                                 </div>
@@ -242,14 +242,14 @@
                                                             <div class="btx-row" style="margin:0 -20px;">
                                                                 <div class="btx-feature-item btx-p-border-border btx-col-12" style="padding:0 20px;">
                                                                     <div class="btx-feature-media ">
-                                                                                <span class="btx-icon btx-icon--plain btx-icon--hover-plain btx-icon--medium">
-                                                                                    <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" >
-                                                                                        <img src="{{ url(explode(',', $data->articles[1]->image)[6]) }}" alt="" width="100" height="100" />
-                                                                                    </span>
-                                                                                </span>
+                                                                        <span class="btx-icon btx-icon--plain btx-icon--hover-plain btx-icon--medium">
+                                                                            <span class="btx-icon-normal btx-icon-plain btx-p-brand-color" >
+                                                                                <img src="{{ url(explode(',', $data->articles[1]->image)[6]) }}" alt="" width="100" height="100" />
+                                                                            </span>
+                                                                        </span>
                                                                     </div>
                                                                     <div class="btx-feature-body">
-                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl" style="letter-spacing:-0.01em;">انجمن تولیدکنندگان مواد شیمیایی ساختمان</div>
+                                                                        <div class="btx-feature-title btx-s-text-color btx-primary-font direction-rtl">انجمن تولیدکنندگان مواد شیمیایی ساختمان</div>
                                                                         <!--<div class="btx-feature-description direction-rtl">Suspendisse dignissim hendrerit turpis, in interdum tortor fermentum.</div>-->
                                                                     </div>
                                                                 </div>
@@ -272,7 +272,7 @@
                         </div>
                         <div class="btx-background-overlay btx-p-bg-bg" style="background-color:#1d1d1d; opacity:0.7;"></div>
                     </div>
-                    <div class="btx-section-wrapper" style="padding-top:100px; padding-bottom:100px;">
+                    <div class="btx-section-wrapper" style="padding-top:50px; padding-bottom:50px;">
                         <div class="btx-container">
                             <div class="btx-row btx-row--main">
                                 <div class="btx-col-12">
@@ -285,10 +285,10 @@
                                                 <div class="btx-box-body" >
                                                     <div class="btx-item js-item-quote btx-quote btx-quote--standard btx-with-background" >
                                                         <div class="btx-quote-author btx-s-text-color">
-                                                            <span class="font-style direction-rtl" style="font-size: 20px; padding-bottom: 15px">{{ $data->articles[2]->name }}</span>
+                                                            <span class="font-style direction-rtl" style="font-size: 16px; padding-bottom: 15px">{{ $data->articles[2]->name }}</span>
                                                         </div>
                                                         <div class="btx-quote-text btx-s-text-color btx-custom_c-font text-justify">
-                                                            <span class="font-style direction-rtl" style="font-size: 15px;">
+                                                            <span class="font-style direction-rtl" style="font-size: 13px;">
                                                                 {!! $data->articles[2]->text !!}
                                                             </span>
                                                         </div>
@@ -318,7 +318,7 @@
                                                     <div class="btx-item js-item-heading btx-heading btx-heading--plain btx-right-align" >
                                                         <h2 class="btx-heading-text btx-secondary-font btx-s-text-color btx-s-text-border direction-rtl">
                                                             <div class="btx-col-12">
-                                                                <span class="font-style" style="font-size: 20px; padding-bottom: 10px">{{ $data->articles[3]->name }}</span>
+                                                                <span class="font-style" style="font-size: 16px; padding-bottom: 10px">{{ $data->articles[3]->name }}</span>
                                                             </div>
                                                         </h2>
                                                     </div>
@@ -376,7 +376,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="btx-item js-item-space btx-space" style="height:40px;"></div>
                                 </div>
                             </div>
                             <div class="btx-row btx-row--main">
@@ -426,9 +425,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="btx-item js-item-space btx-space" style="height:40px;"></div>
-
                                     <div class="btx-item js-item-client btx-client btx-client--carousel btx-client--separator">
                                         <div class="btx-client-content" style="margin:0 -39px 0 -40px;" data-display="5" data-scroll="5" data-loop="true">
                                             @foreach(explode(',', $data->articles[4]->image) as $row)

@@ -30,10 +30,15 @@
                                 <div class="btx-page-hero-body">
 
                                     <div class="btx-page-hero-body-title">
-                                        <h1 class="btx-page-hero-title btx-s-text-color btx-secondary-font" style="letter-spacing:-0.01em;"><span class="font-style" style="font-size: 42px;">Bateaux Brand</span></h1>
+                                        <h1 class="btx-page-hero-title btx-s-text-color btx-secondary-font" style="letter-spacing:-0.01em;">
+                                            <span class="font-style" style="font-size: 42px;">
+                                                {{$title}}
+                                            </span></h1>
                                     </div>
 
-                                    <div class="btx-page-hero-subtitle btx-page-hero-subtitle--bottom btx-primary-font"><span class="font-style" style="font-size: 18px;">The company specializes in web design and development. Currently they are focusing on theme and template development.</span></div>
+{{----}}
+                                    {{--<div class="btx-page-hero-subtitle btx-page-hero-subtitle--bottom btx-primary-font"><span class="font-style" style="font-size: 18px;">The company specializes in web design and development. Currently they are focusing on theme and template development.</span></div>--}}
+{{----}}
 
                                 </div>
                             </div>

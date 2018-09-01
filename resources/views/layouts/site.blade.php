@@ -41,6 +41,11 @@
         <div class="btx-container">
             <div class="btx-navbar-content-wrapper">
                 <div class="btx-collapsed-menu btx-collapsed-menu--minimal">
+                    <div class="btx-button btx-button--fill btx-button-hover--brand btx-button-size--small btx-button-color--brand btx-navbar-widget-2">
+                        <a href="#" target="_blank">En |</a>
+                        <a href="#" target="_blank">Ar |</a>
+                        <a href="#" target="_blank">Ru</a>
+                    </div>
                     <div class="btx-navbar-header">
                         <a class="btx-navbar-brand" href="index.html">
                             <img src="{{ url($setting->logo) }}">
@@ -73,11 +78,6 @@
                                     </div>
                                 </div>
                             </li>
-                            {{--<li>--}}
-                                {{--<div style="display: inline-block; padding: 0px 5px;"><a href="#">En</a></div>--}}
-                                {{--<div style="display: inline-block; padding: 0px 5px;"><a href="#">Ar</a></div>--}}
-                                {{--<div style="display: inline-block; padding: 0px 5px;"><a href="#">Ru</a></div>--}}
-                            {{--</li>--}}
                             <li id="text-8" class="widget widget_text">
                                 <div class="text-center">
                                     @lang('general.footer_text')
