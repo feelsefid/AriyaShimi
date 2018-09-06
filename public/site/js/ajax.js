@@ -5,10 +5,12 @@ jQuery(document).ready(function () {
         $(".btx-page-load").css({
             "visibility":"visible",
             "opacity": 1,
-        })
+        });
+        var cat = $(this).data('cat');
+        var url = cat > 0 ? '/portfolio/loadmore/' + cat + '/cat?page='+$next : '/portfolio/loadmore?page='+$next;
         $.ajax({
             type : 'GET',
-            url : '/portfolio/loadmore?page='+$next,
+            url : url,
             success : function ($data) {
                 $(".shoMoreBtn").attr('data-page',$next);
                 $height=$(".btx-row.btx-row--main.btx-row--no-spacing:first-child").height();

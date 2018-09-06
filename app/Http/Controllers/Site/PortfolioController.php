@@ -23,17 +23,20 @@ class PortfolioController extends Controller
         return view('site.portfolio.index',compact('portfolios','title'));
     }
 
-    public function loadmore()
+    public function loadmore($category_id = null)
     {
-        $portfolios=Portfolio::orderByDesc('id')->paginate(6);
-        return view('site.portfolio.items',compact('portfolios'));
+        $portfolios=Portfolio::orderByDesc('name');
+        if($category_id != null)
+            $portfolios = $portfolios->where('portfolio_categories_id', $category_id);
+        $portfolios = $portfolios->paginate(6);
+        return view('site.portfolio.items',compact('portfolios', 'category_id'));
     }
 
     public function indexWithCategory($category_id)
     {
         $title=PortfolioCategory::find($category_id)->name;
-        $portfolios=Portfolio::where('portfolio_categories_id',$category_id)->paginate(5);
-        return view('site.portfolio.index',compact('portfolios','title'));
+        $portfolios=Portfolio::where('portfolio_categories_id',$category_id)->paginate(6);
+        return view('site.portfolio.index',compact('portfolios','title', 'category_id'));
     }
 
     /**

@@ -10,7 +10,7 @@
                         <div class="btx-background" data-type="image" data-parallaxspeed="0" data-contentfade="" data-mobileparallax="">
                             <div class="btx-background-wrapper">
                                 <a href="{{url('portfolio/'.$portfolio->id.'/'.str_replace(' ','_',$portfolio->name))}}">
-                                    <div class="btx-background-inner" style="background-image:url({{url($portfolio->thumbnail)}}); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
+                                    <div class="btx-background-inner" style="background-image:url({{url(str_replace(' ', '%20', $portfolio->thumbnail))}}); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
                                 </a>
                             </div>
                             <div class="btx-background-overlay " style="opacity:0.9;"></div>
@@ -32,7 +32,7 @@
                         </div>
                         <div class="btx-box-inner" data-height="">
                             <div class="btx-box-content btx-middle-vertical" style="overflow-y:auto;">
-                                <div class="btx-box-body" style="padding-top:20%; padding-right:20%; padding-left:20%; padding-bottom:20%;">
+                                <div class="btx-box-body" style="padding:20%; overflow: hidden">
 
                                     <div class="btx-item js-item-image btx-image btx-left-align">
                                         <div class="btx-image-container">
@@ -75,7 +75,7 @@
                         </div>
                         <div class="btx-box-inner" data-height="">
                             <div class="btx-box-content btx-middle-vertical" style="overflow-y:auto;">
-                                <div class="btx-box-body" style="padding-top:20%; padding-right:20%; padding-left:20%; padding-bottom:20%;">
+                                <div class="btx-box-body" style="padding:20%; overflow: hidden">
 
                                     <div class="btx-item js-item-image btx-image btx-left-align">
                                         <div class="btx-image-container">
@@ -112,7 +112,7 @@
                         <div class="btx-background" data-type="image" data-parallaxspeed="0" data-contentfade="" data-mobileparallax="">
                             <div class="btx-background-wrapper">
                                 <a href="{{url('portfolio/'.$portfolio->id.'/'.str_replace(' ','_',$portfolio->name))}}">
-                                     <div class="btx-background-inner" style="background-image:url({{url($portfolio->thumbnail)}}); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
+                                     <div class="btx-background-inner" style="background-image:url({{url(str_replace(' ', '%20', $portfolio->thumbnail))}}); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
                                 </a>
                             </div>
                         </div>

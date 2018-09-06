@@ -70,7 +70,7 @@
                                                                     <ul class="sub-menu btx-s-bg-bg">
                                                                         @foreach($products as $product)
                                                                             <li class="menu-item">
-                                                                                <a href="{{ url('portfolio/' . $product->id) }}">
+                                                                                <a href="{{url('portfolio/'.$product->id.'/'.str_replace(' ','_',$product->name))}}">
                                                                                     {{ $product->name }}
                                                                                 </a>
                                                                             </li>

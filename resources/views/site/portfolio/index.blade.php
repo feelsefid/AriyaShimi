@@ -54,7 +54,7 @@
                             <div class="btx-container justaPackage">
                                 @include('site.portfolio.items')
                             </div>
-                            <button data-page="1" class="shoMoreBtn" style="margin: 20px auto;display: block;direction: rtl;">
+                            <button data-page="1" data-cat="{{ @$category_id }}" class="shoMoreBtn" style="margin: 20px auto;display: block;direction: rtl;">
                                 بیشتر...
                             </button>
                         </div>

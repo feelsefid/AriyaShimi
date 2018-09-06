@@ -23,6 +23,7 @@ Route::group(['namespace' => 'Site'], function () {
     Route::get('/about', 'AboutController@index')->name('about');
     Route::get('/portfolio', 'PortfolioController@index');
     Route::get('/portfolio/{category_id}/cat', 'PortfolioController@indexWithCategory');
+    Route::get('/portfolio/loadmore/{category_id}/cat', 'PortfolioController@loadmore');
     Route::get('/portfolio/loadmore', 'PortfolioController@loadmore');
     Route::get('/portfolio/{id}/{title}', 'PortfolioController@show');
     Route::get('/articles', 'ArticleController@index');
