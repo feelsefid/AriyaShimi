@@ -22,7 +22,15 @@ class PortfolioController extends Controller
             return response()->redirectTo('errors/permission');
         }
 
-        $data = Portfolio::with('portfolio_categories')->orderBy('id','desc');
+        if($request->has('orderList')){
+            foreach ($request->orderList as $item){
+                $portfolio = Portfolio::find($item[0]);
+                $portfolio->sort_order = $item[1];
+                $portfolio->save();
+            }
+        }
+
+        $data = Portfolio::with('portfolio_categories');
 
         //## Filter By Column ##########################################################################################
         if(!empty($request->input('srch_name'))) {
@@ -51,7 +59,7 @@ class PortfolioController extends Controller
             $data = $data->orderBy('language', $request->input('srch_language_sort'));
         }
         else {
-            $data = $data->orderBy('name', 'desc');
+            $data = $data->orderBy('sort_order');
         }
 
         //## Paginate ##################################################################################################

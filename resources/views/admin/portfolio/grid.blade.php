@@ -1,6 +1,6 @@
 @if(count($data) > 0)
     @foreach($data as $row)
-        <tr style="direction: ltr; text-align: right">
+        <tr data-id="{{ $row->id }}" class="ui-state-default" style="direction: ltr; text-align: right">
             <td class="text-center">
                 <label for="chk-{{ $row->id }}" class="unchecked">
                     {{ Form::checkbox('items[]', $row->id, null, ['id' => 'chk-' . $row->id]) }}
@@ -43,7 +43,7 @@
                         50 => 50,
                         100 => 100,
                         250 => 250
-                    ], $filter['srch_paginate'], ['class' => 'ms form-control col-md-1 col-lg-1 pull-left'])
+                    ], $filter['srch_paginate'], ['class' => 'ms form-control col-md-2 col-lg-2 pull-left'])
                 }}
 
                 <span class="pull-left" style="margin: 12px 10px">
