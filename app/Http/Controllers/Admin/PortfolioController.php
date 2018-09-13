@@ -22,7 +22,7 @@ class PortfolioController extends Controller
             return response()->redirectTo('errors/permission');
         }
 
-        $data = Portfolio::with('portfolio_categories')->orderBy('id','desc');
+        $data = Portfolio::with('portfolio_categories');
 
         //## Filter By Column ##########################################################################################
         if(!empty($request->input('srch_name'))) {

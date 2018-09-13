@@ -652,7 +652,7 @@
                                                 </label>
                                                 <div class="col-lg-10 col-md-10 col-sm-8">
                                                     <div class="previewCont empty22">
-                                                        <img src="{{ url($data->fanni_image) }}" alt="" id="runtime_fanni_image">
+                                                        <img src="{{ url('/') }}/{{ $data->fanni_image }}" alt="" id="runtime_fanni_image">
                                                     </div>
                                                     <a href="" class="text-danger delete-row1 delete-row col-md-1">
                                                         <i class="fa fa-trash"></i>
