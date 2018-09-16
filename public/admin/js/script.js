@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $('#sortable tbody').sortable({
+    $('#grid.sortable tbody').sortable({
         update: function () {
             $(".page-loader-wrapper").show();
             $orderList=[];
-            $("#sortable tbody tr").each(function () {
+            $("#grid.sortable tbody tr").each(function () {
                 $rowId=$(this).attr('data-id');
                 $position=$(this).index() + 1;
                 $thisRow=[];
@@ -12,7 +12,8 @@ $(document).ready(function () {
                     $thisRow.push($position);
                     $orderList.push($thisRow)
                 }
-            })
+            });
+
             $.ajax({
                 type: 'GET',
                 url: '',
@@ -25,7 +26,7 @@ $(document).ready(function () {
             })
         }
     })
-    $("#sortable tbody" ).disableSelection();
+    $("#grid.sortable tbody" ).disableSelection();
     
     $(".addVizhegi").click(function () {
         $("#vizhegi").append('<div class="vizhegiPack ">\n' +
