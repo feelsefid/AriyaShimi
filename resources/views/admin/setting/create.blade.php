@@ -181,6 +181,38 @@
                                         </div>
                                     </div>
 
+                                    <div class="row clearfix" id="under_construction_image">
+                                        <label class="col-lg-3 col-md-3 col-sm-4 form-control-label text-left">
+                                            @lang('setting.underconstruction_image')
+                                        </label>
+                                        <div class="col-lg-9 col-md-9 col-sm-8 clone-row">
+                                            <a href="#" class="text-danger delete-row col-md-1">
+                                                <i class="fa fa-trash"></i>
+                                            </a>
+                                            <div class="input-group dirleft">
+                                                <span class="input-group-addon info cr-click" onclick="BrowseServer('under_construction_image-1');"><i class="fa fa-search"></i></span>
+                                                {{ Form::text('under_construction_image', null, ['class' => 'form-control textright', 'id' => 'under_construction_image-1']) }}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row clearfix">
+                                        <label class="col-lg-3 col-md-3 col-sm-4 form-control-label text-left">
+                                            @lang('setting.underconstruction_downcount')
+                                        </label>
+                                        <div class="col-lg-9 col-md-9 col-sm-8 btnGroup">
+                                            <label for="yes1" class="btn on @if($data->under_construction_downcount == 1) bg-green @else btn-default @endif">
+                                                <input type="radio" value="1" id="yes1" name="under_construction_downcount" @if($data->under_construction_downcount == 1) checked @endif>
+                                                @lang('general.yes')
+                                            </label>
+
+                                            <label for="no1" class="btn off @if($data->under_construction_downcount == 2) bg-blush @else btn-default @endif">
+                                                <input type="radio" value="2" id="no1" name="under_construction_downcount" @if($data->under_construction_downcount == 2) checked @endif>
+                                                @lang('general.no')
+                                            </label>
+                                        </div>
+                                    </div>
+
                                     <div class="row clearfix">
                                         <label class="col-lg-3 col-md-3 col-sm-4 form-control-label text-left">
                                             @lang('setting.underconstrution_text')

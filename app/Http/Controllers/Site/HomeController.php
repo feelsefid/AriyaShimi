@@ -10,6 +10,7 @@ use App\Models\SlideShow;
 use function GuzzleHttp\Promise\queue;
 use Illuminate\Http\Request;
 use Illuminate\Mail\Mailer;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use League\Flysystem\Exception;
 use Mailgun\Mailgun;
@@ -34,6 +35,12 @@ class HomeController extends Controller
     public function index()
     {
         $setting = Setting::where('status', 1)->where('language', app()->getLocale())->first();
+        if($setting->under_construction == 1) {
+            if(!Auth::check()) {
+                return view('site.underconstruction');
+            }
+        }
+
         $title=$setting->title;
         $data = ArticleCategory::with('articles')->where('module', 'home')->first()->toArray();
         $data = array_reverse($data['articles']);

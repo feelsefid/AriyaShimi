@@ -29,7 +29,7 @@ class ArticleController extends Controller
     public function index()
     {
         $data = ArticleCategory::with('articles')->where('module', 'article')->first();
-        $title="اخبار و رویداد ها";
+        $title="مقالات علمی";
         return view('site.article.index', compact('data','title'));
     }
 
@@ -42,8 +42,8 @@ class ArticleController extends Controller
 
     public function blogs()
     {
-        $data = ArticleCategory::with('articles')->where('module', 'blog')->first();
-        $title="مقالات علمی";
+        $data = ArticleCategory::with('articles')->where('module', 'blogs')->first();
+        $title="اخبار و رویداد ها";
         return view('site.article.blog', compact('data','title'));
     }
 

@@ -179,6 +179,14 @@ class SettingController extends Controller
             $model->under_construction_text = $request->input('under_construction_text');
         }
 
+        if($request->has('under_construction_image')) {
+            $model->under_construction_image = $request->input('under_construction_image');
+        }
+
+        if($request->has('under_construction_downcount')) {
+            $model->under_construction_downcount = $request->input('under_construction_downcount');
+        }
+
         if($request->has('logo')) {
             $model->logo = $request->input('logo');
         }
@@ -326,6 +334,14 @@ class SettingController extends Controller
 
         if($request->has('under_construction_text')) {
             $model->under_construction_text = $request->input('under_construction_text');
+        }
+
+        if($request->has('under_construction_image')) {
+            $model->under_construction_image = $request->input('under_construction_image');
+        }
+
+        if($request->has('under_construction_downcount')) {
+            $model->under_construction_downcount = $request->input('under_construction_downcount');
         }
 
         if($request->has('logo')) {

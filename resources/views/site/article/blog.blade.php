@@ -13,7 +13,7 @@
             <header class="btx-content-header js-dynamic-navbar btx-page-hero btx-page-hero--stacked" style="height:60vh;" data-role="header">
                 <div class="btx-background" data-type="image" data-parallaxspeed="2" data-contentfade="" data-mobileparallax="">
                     <div class="btx-background-wrapper">
-                        <div class="btx-background-inner" style="background-image:url({{ url($data->image) }}); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
+                        <div class="btx-background-inner" style="background-image:url({{ url('/' . @$data->image) }}); background-size:cover; background-position:center center; background-repeat:repeat;"></div>
                     </div>
                     <div class="btx-background-overlay btx-p-bg-bg" style="background-color:#1d1d1d; opacity:0.6;"></div>
                 </div>
@@ -23,7 +23,7 @@
                             <div class="btx-page-hero-content-wrapper btx-center-align" style="max-width:550px;">
                                 <div class="btx-page-hero-body">
                                     <div class="btx-page-hero-body-title">
-                                        <h1 class="btx-page-hero-title btx-s-text-color btx-secondary-font direction-rtl" style="color:#fff">{{ $data->name }}</h1>
+                                        <h1 class="btx-page-hero-title btx-s-text-color btx-secondary-font direction-rtl" style="color:#fff">{{ $title }}</h1>
                                     </div>
                                 </div>
                             </div>

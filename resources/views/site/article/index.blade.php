@@ -24,7 +24,7 @@
                             <div class="btx-page-hero-content-wrapper btx-center-align" style="max-width:550px;">
                                 <div class="btx-page-hero-body">
                                     <div class="btx-page-hero-body-title">
-                                        <h1 class="btx-page-hero-title btx-s-text-color btx-secondary-font direction-rtl">{{ $data->name }}</h1>
+                                        <h1 class="btx-page-hero-title btx-s-text-color btx-secondary-font direction-rtl">{{ $title }}</h1>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
                                                         </div>
                                                         <div class="btx-entry-body text-right" style="padding:40px;">
                                                             <h4 class="btx-entry-title btx-s-text-color btx-secondary-font">
-                                                                <a href="{{ url('articles/' . $row->id.'/'.str_replace(' ','_',$portfolio->name)) }}">
+                                                                <a href="{{ url('articles/' . $row->id.'/'.str_replace(' ','_',$row->name)) }}">
                                                                     {{ $row->name }}
                                                                 </a>
                                                             </h4>

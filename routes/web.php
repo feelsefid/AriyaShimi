@@ -19,6 +19,10 @@ Auth::routes();
 
 Route::group(['namespace' => 'Site'], function () {
 
+    Route::get('/underconstruction', function () {
+        return view('site.underconstruction');
+    });
+
     Route::get('/', 'HomeController@index')->name('home');
     Route::get('/about', 'AboutController@index')->name('about');
     Route::get('/portfolio', 'PortfolioController@index');
